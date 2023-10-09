@@ -1,5 +1,5 @@
 ## ESTYN 
-# Venta de videojuegos apuntado hacia los jovenes y adultos
+
 # Leandro Boxler
 # David Flores
 # Lorena Bravo
