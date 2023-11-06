@@ -1,22 +1,22 @@
-# ESTYN 
-## Venta de videojuegos apuntado hacia los jovenes y adultos
-## Leandro Boxler
-## David Flores
-## Lorena Bravo
-## Rodrigo Jigena
-## Carolina Diaz
-
-## steam y blizzard por sus colores
-## playxfun y eneba por sus menu
-## CDKeys en general
-## paginas apuntadas a jovenes y adultos
+# ESTYN :
+## Pagina para la compra de videojuegos de todo tipo con la cual podran comprar videojuegos con cualquier metodo de pago y el envio
+## ¿Te imaginas volando en dragon por toda la ciudad? ¿te imaginas conduciendo el auto mas rapido del mundo? Todo eso y mas podras hacer con nuestros videojuegos.Con nuestras ofertas unicas para que todos puedan acceder a ese videojuego 
+## Inspirada en paginas como Steam y Blizzard por sus colores, Playxfun y Eneba por sus menus muy intuitivos y CDKey 
+# Links:
 ## https://www.cjs-cdkeys.com/
 ## https://store.steampowered.com/
 ## https://www.blizzard.com/
 ## https://www.playxfun.com/
 ## https://www.eneba.com/
 
-# BOCETOS
+# INTEGRANTES:
+## Leandro Boxler / 24 años / Buenos Aires - Lanus
+## David Flores / 26 años / Buenos Aires - Lanus
+## Lorena Bravo / 36 años / Sgo Del Estero - La Banda
+## Rodrigo Jigena / 23 años / Buenos Aires - Capital Federal
+## Carolina Diaz
+
+# BOCETOS:
 ## Lorena:
 ## https://www.figma.com/file/DmElCsFIfcKGpKUBRDwKLb/Untitled?type=design&node-id=0-1&mode=design&t=sIPpA0RrtABx0qsA-0
 
