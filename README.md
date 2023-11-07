@@ -14,7 +14,7 @@
 ## David Flores / 26 años / Buenos Aires - Lanus
 ## Lorena Bravo / 36 años / Sgo Del Estero - La Banda
 ## Rodrigo Jigena / 23 años / Buenos Aires - Capital Federal
-## Carolina Diaz
+## Carolina Diaz / 28 años / Buenos Aires - Quilmes
 
 # BOCETOS:
 ## Lorena:
