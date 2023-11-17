@@ -3,7 +3,7 @@ ul{
 }
 
 .login__main{
-    
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -105,26 +105,25 @@ ul{
 
     .login__saludo{
         display: block;
-        font-size: 40px;
-        width: 20%;
+        font-size: 50px;
+        width: 100%;
         padding: 20px;
     }
     
     /*CAJA DE LOGIN*/
     .login__sectionform{
-            width: 53%;
+            width: 60%;
             padding: 5% 1% 15% 1%;
         }
 
     /*CAJA DEL FORMULARIO*/
     .login__section__form{
-            padding: 0 9%;
-           
+            padding: 0 9%
         }  
     /*"INICIAR SECION"*/
     .login__sectionform--titulo{
 
-    font-size: 20px;
+    font-size: 40px;
 
 }
 }
