@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--custom css-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/18ef03eb70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <p>Idioma ⌵ </p>
+        <div class="logo-titulo">
+            <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
+            <h2>STYN</h2>
+        </div>
+        <nav>
+            <div>
+                
+                <ul class="lista-header-dos">
+                    <li class="register-bottom"><a href="/register">Registrate</a></li>
+                    <li style="color: white;">|</li>
+                    <li class="register-bottom"><a href="/login">Login</a></li>
+                    <li><i class="fa-solid fa-circle-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fa-solid fa-heart"></i></li> 
+                </ul>
+                
+            </div>
+            
+            <div class="div-padre-lista">
+            <ul class="lista-header">
+                <li><a href="">PS3</a></li>
+                <li><a href="">PS4</a></li>
+                <li><a href="">PS5</a></li>
+                <li><a href="">XBOX</a></li>
+                <li><a href="">NINTENDO</a></li>
+                <li><a href="">CONTACTO</a></li>
+                <li><a href="">INICIO</a></li>
+            </ul>
+            <div>
+                <input class="__input" placeholder="Buscar" type="text">    
+            </div>
+            </div>
+           
+        </nav>
+    </header>
+    <main class="index__main">
+        <!--Slider principal de destacados-->
+        <section class="index__main__section-destacados">
+            <h3>DESTACADOS Y RECOMENDADOS</h3>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <img src="/img/banner_ark.png" alt="img-banner-ark"></div>
+                    <div class="swiper-slide"> <img src="/img/banner_fc24.jpg" alt="img-banner-fc24"></div>
+                    <div class="swiper-slide"> <img src="/img/banner_stalker2.jpg" alt="img-banner-stalker2"></div>
+                    <div class="swiper-slide"> <img src="/img/banner_codmw2.jpg" alt="img-banner-codmw2"></div>
+                </div>
+                <BR><BR>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!--categorias, banner2 e imagenes-->
+        <section class="index__main__section-explorar-banner2-imgs">
+            <!--menu categorias/genero-->
+            <div class="index__main__div-categorias-generos">
+                <!--menu categorias-->
+                <div class="index__main__div__div-categorias">
+                    <h4><B>EXPLORAR CATEGORÍAS</B></h4>
+                    <p><a href="">Lo más vendido</a></p>
+                    <p><a href="">Novedades</a></p>
+                    <p><a href="">Próximamente</a></p>
+                </div>
+                <!--menu generos-->
+                <div class="index__main__div__div-generos">
+                    <h4><B>EXPLORAR POR GENERO</B></h4>
+                    <div>
+                        <ul>
+                            <li><a href="">Acción</a></li>
+                            <li><a href="">Aventura</a></li>
+                            <li><a href="">Carreras</a></li>
+                            <li><a href="">Deportes</a></li>
+                            <li><a href="">Casuales</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Estrategia</a></li>
+                            <li><a href="">Multijugador</a></li>
+                            <li><a href="">Rol</a></li>
+                            <li><a href="">Simulación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <section class="index__main__section-banner2-imgs">
+                <!--slider secundario-->
+                <section class="index__main__section-banner2">
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper swiper-wrapper2">
+                            <!-- Slides -->
+                            <div class="swiper-slide"> <img src="/img/banner_2_acv.png" alt="img-banner2-acv"></div>
+                            <div class="swiper-slide"> <img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></div>
+                            <div class="swiper-slide"> <img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></div>
+                            <div class="swiper-slide"> <img src="/img/banner_2_acv.png" alt="img-banner2-acv"></div>
+                            <div class="swiper-slide"> <img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></div>
+                            <div class="swiper-slide"> <img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></div>
+                        </div>
+                        <BR><BR>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section class="index__main__section-img-sueltas">
+                    <article>
+                        <img src="/img/GoWR.jpg" alt="">
+                    </article>
+                    <article>
+                        <img src="/img/csgo.jpg" alt="">
+                    </article>
+                </section> 
+            </section>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--Slider principal-->
+        <script>
+            var swiper = new Swiper('.mySwiper1', {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <!--Slider secundario-->
+        <script>
+            var swiper = new Swiper(".mySwiper2", {
+                slidesPerView: 3,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

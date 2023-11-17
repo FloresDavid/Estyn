@@ -1,0 +1,55 @@
+.index__main {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+}
+.index__main__section-destacados h3{
+    text-align: center;
+}
+.index__main__section-explorar-banner2-imgs {
+    display: block;
+}
+.index__main__div-categorias-generos {
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.index__main__div__div-generos div{
+    display: flex;
+    justify-content: space-between;
+}
+.index__main__section-img-sueltas article img {
+    width: -webkit-fill-available;
+    padding: 5% 20px;
+}
+@media (min-width:768px) {
+    .index__main__section-img-sueltas{
+        display: flex;
+    }
+    .index__main__section-img-sueltas article {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .index__main__section-explorar-banner2-imgs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .index__main__div-categorias-generos{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-left: 5%;
+        width: 30%;
+        font-size: 30px;
+    }
+    .index__main__div__div-generos div{
+        display: flex;
+        flex-direction: column;
+    }
+    .index__main__section-banner2-imgs {
+        width: 70%;
+    }
+}
