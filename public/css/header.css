@@ -1,0 +1,93 @@
+
+header {
+    background: rgb(217,217,217);
+    background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(39,39,135,1) 0%, rgba(9,9,121,0.9473039215686274) 47%, rgba(47,54,186,1) 66%);
+    /* padding: 20px; */
+    /* height: 162px; */
+}
+
+header section { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__section--button-nav{
+    border: 1px solid #ffffff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}   
+
+header nav ul {
+    margin-top: 10px;
+}
+
+header nav ul li {
+    padding: 2px 0;
+    list-style: none;
+}
+
+.logo-titulo {
+    display: flex;
+
+}
+
+
+.lista-header {
+    display: flex;
+}
+.lista-header li a {
+    margin: 12px;
+}
+
+.lista-header-dos {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+
+.register-bottom a {
+    color: var(--colorGrisClaro);
+}
+.lista-header-dos li a {
+    margin: 10px;
+}
+
+.__input {
+    height: 36px;
+    
+}
+
+.div-padre-lista {
+    background-color: var(--colorGrisClaro);
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 4px;
+}
+
+.logo-titulo {
+    position: relative;
+}
+
+.logo-titulo h2 {   
+    position: absolute;
+    margin-top: 70px;
+    padding: 30px;
+    margin-left: 95px;
+
+}
+
+
+
+.logo-estyn {
+    width: 170px;
+    
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+

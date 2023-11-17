@@ -1,3 +1,13 @@
+:root{
+    --colorAzulOscuro: #0D298D;
+    --colorGrisOscuro: #453E3E;
+    --colorAzulClaro: #0019F5;
+    --colorGrisClaro: #D9D9D9;
+    --colorBordo: #740E0E;
+}
+
+
+
 body{
     background-image: url(/img/imagenFondo.jpg)
 }
