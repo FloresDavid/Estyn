@@ -1,0 +1,227 @@
+.product_detail {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+h3 {
+    padding-top: 60px;
+}
+
+.main_image {
+    width: 65%;
+}
+
+.product-info {
+    padding-left: 80px;
+}
+
+.add_cart {
+    background-color: var(--colorGrisOscuro);
+    padding: 10px;
+}
+
+.cantidad button {
+    width: 20px;
+    height: 20px;
+}
+
+.precio {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio button {
+    padding: 5px;
+    background-color: var(--colorAzulClaro);
+}
+
+.cantidad {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.add__carrito {
+    padding-left: 150px;
+    color: var(--colorAzulClaro);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add__carrito button {
+    background-color: var(--colorAzulClaro);
+    padding: 5px;
+}
+
+.reseñas {
+    background-color: var(--colorGrisClaro);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+.reseñas__stars {
+    display: flex;
+    justify-content: center;
+
+}
+
+.comentar button {
+    width: 300px;
+    background-color: var(--colorGrisClaro);
+}
+
+.comentarios,
+.reseñas__coment {
+    background-color: var(--colorGrisClaro);
+    padding: 5px;
+}
+
+.comentarios__stars {
+    display: flex;
+}
+
+.comentarios__stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comentarios__hands {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    border-top: 2px solid black;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+.img__productos__relacionados {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img_game {
+    width: 100px;
+    margin: 6px;
+}
+
+.name_games {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.price_games {
+    display: flex;
+    justify-content: space-around;
+}
+
+.oferta {
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+@media (min-width:426px) {
+    .main__product {
+        display: flex;
+    }
+
+    .main_image {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .add_cart {
+        height: 160px;
+        margin-top: 100px;
+    }
+
+
+    .add__carrito button {
+        width: 150px;
+    }
+
+    .img__productos__relacionados {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img_game {
+        width: 200px;
+    }
+
+    .price_games {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .main_image {
+        width: 500px;
+    }
+
+    .add_cart {
+        margin-top: 250px;
+        width: 700px;
+        margin-left: 35px;
+    }
+
+    .add__carrito button {
+        width: 100%;
+        margin-left: 370px;
+    }
+
+    .img__productos__relacionados {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img_game {
+        width: 300px;
+    }
+
+    .price_games {
+        font-size: 50px;
+    }
+}

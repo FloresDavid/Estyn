@@ -1,0 +1,60 @@
+footer {background: rgb(217, 217, 217);
+background: linear-gradient(180deg, rgba(217, 217, 217, 1) 0%, rgba(39, 39, 135, 1) 0%, rgba(9, 9, 121, 0.9473039215686274) 47%, rgba(47, 54, 186, 1) 66%);
+margin: 10;
+ }
+.redes_sociales {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.redes_sociales i {
+    margin: 10px;
+    font-size: 2em;
+}
+
+.medios_pago {
+    padding-left: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.icon_medios_pago {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.icon_medios_pago i {
+    margin: 10px;
+    font-size: 2em;
+}
+
+.contacto {
+    padding-left: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+.contacto__tel, .whatsapp, .mail, .ubicacion{
+    margin: 30px;
+    display: flex;
+    
+}
+.contacto__tel i, .whatsapp i, .mail i, .ubicacion i{
+    margin-right: 20px;
+    font-size: 2em; 
+}
+.contacto__tel p, .whatsapp p, .mail p, .ubicacion p{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (min-width:426px) {
+    .section__footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    }
+    
+
+}

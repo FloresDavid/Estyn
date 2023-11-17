@@ -1,0 +1,135 @@
+ul{
+    list-style: none;
+}
+
+.login__main{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   align-items: center;
+
+}
+/*LOGO STYN*/
+.login__logostyn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.login__logostyn img{
+    width: 25%;
+}
+.login__logostyn h2{
+    position: absolute;
+    left: 21%;
+    color: #ffffff;
+}
+/*HOLA ME ALEGRA VERTE*/
+.login__saludo{
+    display: none;
+    color: #ffffff;
+}
+/*CAJA DE LOGIN*/
+.login__sectionform{
+    background-color: #453E3E;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+    width: 90%;
+}
+/*"INICIAR SECION"*/
+.login__sectionform--titulo{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+/*CAJA DEL FORMULARIO*/
+.login__section__form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*DIV QUE CONTIENE CADA FORM*/
+.login__section__formdiv{
+    position: relative;
+    width: 100%;
+}
+
+/*ESPACIOS PARA LLENAR */
+.login__section__formdiv--escribir{
+    padding: 12px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border: none;
+ 
+}
+/*OJITO DE LA CONTRASEÑA*/
+.login__section__form__ojito{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color:rgba(0, 0, 0, 0.7)
+    }
+
+/*BOTON*/
+.login__section__formboton{
+    text-align: center;
+}
+.login__section__formboton input{
+    border: none;
+    padding: 8px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+/*lo de olvide contraseña y eso*/
+.login__section__formP a{
+    color: #ffffff
+}
+
+@media (min-width:426px) {
+    
+    .login__main{
+        flex-direction: row;
+    }
+    /*SALUDO DE ALEGRA VERTE*/
+
+    .login__saludo{
+        display: block;
+        font-size: 50px;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /*CAJA DE LOGIN*/
+    .login__sectionform{
+            width: 60%;
+            padding: 5% 1% 15% 1%;
+        }
+
+    /*CAJA DEL FORMULARIO*/
+    .login__section__form{
+            padding: 0 9%
+        }  
+    /*"INICIAR SECION"*/
+    .login__sectionform--titulo{
+
+    font-size: 40px;
+
+}
+}
+@media (min-width:1024px){
+    .login__sectionform{
+        width: 48%;
+    }
+
+}
