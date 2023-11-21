@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet" />
+
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/dbc0dda609.js" crossorigin="anonymous"></script>
     </head>
-</head>
-<body>
-    
+    <body>
+
+        <header>
+            <p>Idioma ⌵ </p>
+            <div class="logo-titulo">
+                <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
+                <h2>STYN</h2>
+            </div>
+            <nav>
+                <div>
+
+                    <ul class="lista-header-dos">
+                        <li class="register-bottom"><a href="/register">Registrate</a></li>
+                        <li style="color: white;">|</li>
+                        <li class="register-bottom"><a href="/login">Login</a></li>
+                        <li><i class="fa-solid fa-circle-user"></i></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><i class="fa-solid fa-heart"></i></li>
+                    </ul>
+
+                </div>
+
+                <div class="div-padre-lista">
+                    <ul class="lista-header">
+                        <li><a href="">PS3</a></li>
+                        <li><a href="">PS4</a></li>
+                        <li><a href="">PS5</a></li>
+                        <li><a href="">XBOX</a></li>
+                        <li><a href="">NINTENDO</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                        <li><a href="">INICIO</a></li>
+                    </ul>
+                    <div>
+                        <input class="__input" placeholder="Buscar" type="text">
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <main>
+            <div class="borde-de-caja">
+
+
+                <form class="formulario" action="">
+
+                    <h4 class=" h4">Crea tu cuenta</h4>
+
+                    <div class="inputs">
+
+
+                        <label class="label" for="Nombre">Nombre</label>
+                        <input class="input" required placeholder="Ingresa tu nombre..." name="nombre" id="Nombre"
+                            type="text">
+
+
+
+                        <label class="label" for="Apellido">Apellido</label>
+                        <input class="input" required placeholder="Ingresa tu Apellido..." name="apellido" id="Apellido"
+                            type="text">
+
+
+
+                        <label class="label" for="email">Escribí tu email</label>
+                        <input class="input" required placeholder="Ingresar Email" id="email" type="email">
+
+
+                        <label class="label" for="password">Escribí tu contraseña<a href=""></a></label>
+                        <input class="input" id="password" type="password" placeholder="Escribí tu contrasenia"
+                            form="password2">
+
+
+                        <label class="label" for="password2">Confirma tu contraseña<a href=""></a></label>
+                        <input class="input" id="password2" type="password" placeholder="Escribí tu contrasenia"
+                            form="password2">
+
+
+                    </div>
+
+                    <div class="contenedor-de-boton">
+                        <div class="recaptcha">
+                            <input type="checkbox">
+                            <label class="label-robot" for="">No soy un robot</label>
+                        </div>
+                        <button class="boton">Registrarme</button>
+                        <div class="cuenta-sesion">
+                            <p> <a style="color: white;" href="#">Ya tengo cuenta</a></p>
+                            <p> <a style="color: white;" href="#">Iniciar Sesion</a></p>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <article class="section__footer">
+                <section>
+                    <div class="redes_sociales">
+                        <i class="fa-brands fa-tiktok"></i><i class="fa-brands fa-square-instagram"></i><i
+                            class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-twitter"></i>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h6 class="medios_pago"> Medios de pago</h6>
+                        <div class="icon_medios_pago">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-amazon-pay"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h6 class="contacto">Contacto</h6>
+                    </div>
+                    <div class="contacto__tel">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <p>+54911165230123</p>
+                    </div>
+                    <div class="whatsapp">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                        <p>Whatsapp +54911165230123</p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <p>estyn@gmail.com</p>
+                    </div>
+                    <div class="ubicacion">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <p>Santiago Del Estero-
+                            La Banda-
+                            Salavinos Nº253</p>
+                    </div>
+                </section>
+            </article>
+            </article>
+        </footer>
 </body>
-</html>
-
-
-<header>
-    <p>Idioma ⌵ </p>
-    <div class="logo-titulo">
-        <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
-        <h2>STYN</h2>
-    </div>
-    <nav>
-        <div>
-            
-            <ul class="lista-header-dos">
-                <li class="register-bottom"><a href="/register">Registrate</a></li>
-                <li style="color: white;">|</li>
-                <li class="register-bottom"><a href="/login">Login</a></li>
-                <li><i class="fa-solid fa-circle-user"></i></li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><i class="fa-solid fa-heart"></i></li> 
-            </ul>
-            
-        </div>
-        
-        <div class="div-padre-lista">
-        <ul class="lista-header">
-            <li><a href="">PS3</a></li>
-            <li><a href="">PS4</a></li>
-            <li><a href="">PS5</a></li>
-            <li><a href="">XBOX</a></li>
-            <li><a href="">NINTENDO</a></li>
-            <li><a href="">CONTACTO</a></li>
-            <li><a href="">INICIO</a></li>
-        </ul>
-        <div>
-            <input class="__input" placeholder="Buscar" type="text">    
-        </div>
-        </div>
-       
-    </nav>
-</header>
-
-
-
-<div class="borde-de-caja">
-  
-
-    <form class="formulario" action="">
-
-        <h4 class=" h4">Crea tu cuenta</h4>
-
-       <div class="inputs">
-
-        
-            <label class="label" for="Nombre">Nombre</label>
-            <input class="input" required placeholder="Ingresa tu nombre..." name="nombre" id="Nombre" type="text">
-        
-
-
-            <label class="label" for="Apellido">Apellido</label>
-            <input class="input" required placeholder="Ingresa tu Apellido..." name="apellido" id="Apellido" type="text">
-
-
-
-            <label class="label" for="email">Escribí tu email</label>
-            <input class="input" required placeholder="Ingresar Email" id="email" type="email">
-
-
-            <label class="label"  for="password">Escribí tu contraseña<a href=""></a></label>
-            <input class="input" id="password" type="password" placeholder="Escribí tu contrasenia" form="password2">
-
-
-            <label class="label" for="password2">Confirma tu contraseña<a href=""></a></label>
-            <input class="input" id="password2" type="password" placeholder="Escribí tu contrasenia" form="password2">
-
-
-    </div> 
-
-    <div class="contenedor-de-boton">
-        <div class="recaptcha">
-        <input type="checkbox">
-        <label class="label-robot" for="">No soy un robot</label>
-        </div>  
-        <button class="boton">Registrarme</button>
-        <div class="cuenta-sesion">
-        <p> <a style="color: white;" href="#">Ya tengo cuenta</a></p>
-        <p> <a style="color: white;" href="#">Iniciar Sesion</a></p>
-        
-        </div>
-    </div>
-    </form>
-</div>
 
 </html>
