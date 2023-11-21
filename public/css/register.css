@@ -16,9 +16,13 @@
     padding: 10px;
  }
 
+
+ .div-padre-lista {
+    background-color: var(--colorGrisClaro);
+ }
+
  .titulo-principal-s {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .borde-de-caja { /*borde de la tarjeta*/
@@ -81,7 +85,7 @@
 }
 
 .h4 {
-    font-size: 50px;
+    font-size: 30px;
     color: var(--colorGrisClaro);
 }
 
@@ -156,7 +160,7 @@
     }
     
     .h4 {
-        font-size: 50px;
+        font-size: 38px;
         color: var(--colorGrisClaro);
     }
     
