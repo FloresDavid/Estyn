@@ -34,11 +34,11 @@ h3 {
 }
 
 .main_image {
-    width: 65%;
+    width: 90%;
 }
 
 .product-info {
-    padding-left: 80px;
+    padding-left: 50px;
 }
 
 .add_cart {
@@ -128,28 +128,12 @@ h3 {
     margin-top: 25px;
 }
 
-.img__productos__relacionados {
-    width: 50px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.img_game {
-    width: 100px;
-    margin: 6px;
+.producto__relacionado {
+    width: 90%;
 }
 
 .name_games {
     font-size: 15px;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-}
-
-.price_games {
-    display: flex;
-    justify-content: space-around;
 }
 
 .oferta {
@@ -173,19 +157,8 @@ h3 {
         margin-top: 100px;
     }
 
-
     .add__carrito button {
         width: 150px;
-    }
-
-    .img__productos__relacionados {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .img_game {
-        width: 200px;
     }
 
     .price_games {
@@ -199,10 +172,10 @@ h3 {
     .main_image {
         width: 500px;
     }
-
     .add_cart {
         margin-top: 250px;
-        width: 700px;
+        width: 310px;
+        height: 200px;
         margin-left: 35px;
     }
 
@@ -210,17 +183,6 @@ h3 {
         width: 100%;
         margin-left: 370px;
     }
-
-    .img__productos__relacionados {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .img_game {
-        width: 300px;
-    }
-
     .price_games {
         font-size: 50px;
     }

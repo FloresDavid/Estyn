@@ -5,13 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detail</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-
+        <p>Idioma ⌵ </p>
+        <div class="logo-titulo">
+            <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
+            <h2>STYN</h2>
+        </div>
+        <nav>
+            <div>
+                
+                <ul class="lista-header-dos">
+                    <li class="register-bottom"><a href="/register">Registrate</a></li>
+                    <li style="color: white;">|</li>
+                    <li class="register-bottom"><a href="/login">Login</a></li>
+                    <li><i class="fa-solid fa-circle-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fa-solid fa-heart"></i></li> 
+                </ul>
+                
+            </div>
+            
+            <div class="div-padre-lista">
+            <ul class="lista-header">
+                <li><a href="">PS3</a></li>
+                <li><a href="">PS4</a></li>
+                <li><a href="">PS5</a></li>
+                <li><a href="">XBOX</a></li>
+                <li><a href="">NINTENDO</a></li>
+                <li><a href="">CONTACTO</a></li>
+                <li><a href="">INICIO</a></li>
+            </ul>
+            <div>
+                <input class="__input" placeholder="Buscar" type="text">    
+            </div>
+            </div>
+           
+        </nav>
     </header>
 
     <main>
@@ -29,7 +66,26 @@
 
             <article class="main__product">
                 <div class="product-info">
-                    <div><img class="main_image" src="/img/7daysToDie.png" alt="50px"></div>
+                    <div>
+                        <img class="main_image" src="/img/7daysToDie.png" alt="50px">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper mySwiperpd1">
+                            <div class="swiper-wrapper swiper-wrapperpd1">
+                                <div class="swiper-slide swiper-slidepd1"><img src="/img/7dtd-banner-1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slidepd1"><img src="/img/7dtd-banner-2.jpeg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slidepd1"><img src="/img/7dtd-banner-3.webp" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slidepd1"><img src="/img/7dtd-banner-4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slidepd1"><img src="/img/7dtd-banner-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="add_cart">
                     <div class="precio">$26,000
@@ -142,22 +198,89 @@
 
             <article>
                 <h3>PRODUCTOS RELACIONADOS</h3><br>
-                <div class="img__productos__relacionados">
-                    <img class="img_game" src="/img/theLastOfUs.jpg" alt="">
-                    <img class="img_game" src="/img/residentEvil4.jpg" alt="">
-                    <img class="img_game" src="/img/StateOfDecay2.webp" alt="">
+                <div class="swiper mySwiper mySwiperpd2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/theLastOfUs.jpg" alt="">
+                                <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
+                                <p>$20.000</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/residentEvil4.jpg" alt="">
+                                <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
+                                <p>$13.000</p>
+                                <p class="oferta">OFERTA</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/StateOfDecay2.webp" alt="">
+                                <P class="name_games">State Of Decay <br> 2 XBOX</P>
+                                <p>$17.000</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/theLastOfUs.jpg" alt="">
+                                <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
+                                <p>$20.000</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/residentEvil4.jpg" alt="">
+                                <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
+                                <p>$13.000</p>
+                                <p class="oferta">OFERTA</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide swiper-slidepd2">
+                            <article class="producto__relacionado">
+                                <img class="img_game" src="/img/StateOfDecay2.webp" alt="">
+                                <P class="name_games">State Of Decay <br> 2 XBOX</P>
+                                <p>$17.000</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="name_games">
-                    <p>The Last Of Us <br> Remastered | PS4</p>
-                    <P>Residet Evil 4 <br> Remastered | PS5</P>
-                    <P>State Of Decay <br> 2 XBOX</P>
-                </div>
-                <div class="price_games">
-                    <p>$20.000</p>
-                    <p>$13.000</p>
-                    <p>$17.000</p>
-                </div>
-                <p class="oferta">OFERTA</p>
+            </article>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiperpd1", {
+                    slidesPerView: 3,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+                    <!--swiper 2 productos relacionados-->    
+            <script>
+                var swiper = new Swiper(".mySwiperpd2", {
+                slidesPerView: 3,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+            </script>
     </main>
 
     <footer>
@@ -205,10 +328,7 @@
             </section>
         </article>
         </article>
-
     </footer>
-
-
 </body>
 
 </html>
