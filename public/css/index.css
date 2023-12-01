@@ -15,13 +15,22 @@
     justify-content: space-between;
     justify-content: space-around;
 }
+.index__main__div-categorias-generos div{
+    font-size: small;
+}
 .index__main__div__div-generos div{
     display: flex;
     justify-content: space-between;
 }
+.index__main__div__div-generos div ul {
+    margin-left: 10px;
+}
 .index__main__section-img-sueltas article img {
     width: -webkit-fill-available;
     padding: 5% 20px;
+}
+.index__main__section-img-sueltas {
+    margin-bottom: 5%;
 }
 @media (min-width:768px) {
     .index__main__section-img-sueltas{
@@ -30,12 +39,16 @@
     .index__main__section-img-sueltas article {
         width: 50%;
     }
+    .index__main__div-categorias-generos div{
+        font-size: large;
+    }
 }
 
 @media (min-width: 1024px) {
     .index__main__section-explorar-banner2-imgs {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 5%;
     }
     .index__main__div-categorias-generos{
         display: flex;

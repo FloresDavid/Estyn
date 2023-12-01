@@ -2,7 +2,7 @@ footer {background: rgb(217, 217, 217);
 background: linear-gradient(180deg, rgba(217, 217, 217, 1) 0%, rgba(39, 39, 135, 1) 0%, rgba(9, 9, 121, 0.9473039215686274) 47%, rgba(47, 54, 186, 1) 66%);
 margin: 10;
  }
-.redes_sociales {
+ .redes_sociales {
     padding-top: 30px;
     padding-left: 30px;
 }
@@ -46,7 +46,7 @@ margin: 10;
 }
 .contacto__tel p, .whatsapp p, .mail p, .ubicacion p{
     color: #fff;
-    font-size: 30px;
+    font-size: medium;
 }
 
 @media (min-width:426px) {
@@ -54,6 +54,10 @@ margin: 10;
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+    }
+    .section__redes_sociales {
+        padding-top: 5%;
+        width: 30%;
     }
     
 

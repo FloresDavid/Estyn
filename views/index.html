@@ -15,10 +15,11 @@
 <body>
     <header>
         <p>Idioma ⌵ </p>
-        <div class="logo-titulo">
-            <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
-            <h2>STYN</h2>
-        </div>
+        <a href="/">
+            <div class="logo-titulo"><img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
+                <h2 class="text-logo">STYN</h2>
+            </div>
+        </a>
         <nav>
             <div>
                 <ul class="lista-header-dos">
@@ -26,31 +27,33 @@
                     <li style="color: white;">|</li>
                     <li class="register-bottom"><a href="/login">Login</a></li>
                     <div class="icons-barra">
-                    <li><i class="fa-solid fa-circle-user"></i></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li> 
-                    <li><i class="fa-solid fa-bars"></i></li>
-                    <li><i class="fa-solid fa-house"></i></li>  
+                        <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+                        <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li> 
+                        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        <li><a href="/"><i class="fa-solid fa-house"></i></a></li>  
                     </div>
                 </ul>
             </div>
-            
+            <div class="div-padre-lista-buscador">
             <div class="div-padre-lista">
-            <ul class="lista-header">
-                <li><a href="">PS3</a></li>
-                <li><a href="">PS4</a></li>
-                <li><a href="">PS5</a></li>
-                <li><a href="">XBOX</a></li>
-                <li><a href="">NINTENDO</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">INICIO</a></li>
-            </ul>
-            <div class="contenedor-busqueda-boton">
-                <input class="__input" placeholder="Buscar" type="text">    
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <ul class="lista-header">
+                    <li><a href="#">PS3</a></li>
+                    <li><a href="#">PS4</a></li>
+                    <li><a href="#">PS5</a></li>
+                    <li><a href="#">XBOX</a></li>
+                    <li><a href="#">NINTENDO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="/">INICIO</a></li>
+                </ul>
+            </div>  
+            <div class="div-padre-buscador">
+                <div class="contenedor-busqueda-boton">
+                    <input class="__input" placeholder="Buscar" type="text">    
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
-            </div>
-
+        </div>
         </nav>
     </header>
     <main class="index__main">
@@ -62,10 +65,10 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"> <img src="/img/banner_ark.png" alt="img-banner-ark"></div>
-                    <div class="swiper-slide"> <img src="/img/banner_fc24.jpg" alt="img-banner-fc24"></div>
-                    <div class="swiper-slide"> <img src="/img/banner_stalker2.jpg" alt="img-banner-stalker2"></div>
-                    <div class="swiper-slide"> <img src="/img/banner_codmw2.jpg" alt="img-banner-codmw2"></div>
+                    <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_ark.png" alt="img-banner-ark"></a></div>
+                    <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_fc24.jpg" alt="img-banner-fc24"></a></div>
+                    <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_stalker2.jpg" alt="img-banner-stalker2"></a></div>
+                    <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_codmw2.jpg" alt="img-banner-codmw2"></a></div>
                 </div>
                 <BR><BR>
                 <!-- If we need pagination -->
@@ -82,26 +85,26 @@
                 <!--menu categorias-->
                 <div class="index__main__div__div-categorias">
                     <h4><B>EXPLORAR CATEGORÍAS</B></h4>
-                    <p><a href="">Lo más vendido</a></p>
-                    <p><a href="">Novedades</a></p>
-                    <p><a href="">Próximamente</a></p>
+                    <p><a href="#">Lo más vendido</a></p>
+                    <p><a href="#">Novedades</a></p>
+                    <p><a href="#">Próximamente</a></p>
                 </div>
                 <!--menu generos-->
                 <div class="index__main__div__div-generos">
                     <h4><B>EXPLORAR POR GENERO</B></h4>
-                    <div>
+                    <div class="index__main__div__div__div-generos">
                         <ul>
-                            <li><a href="">Acción</a></li>
-                            <li><a href="">Aventura</a></li>
-                            <li><a href="">Carreras</a></li>
-                            <li><a href="">Deportes</a></li>
-                            <li><a href="">Casuales</a></li>
+                            <li><a href="#">Acción</a></li>
+                            <li><a href="#">Aventura</a></li>
+                            <li><a href="#">Carreras</a></li>
+                            <li><a href="#">Deportes</a></li>
+                            <li><a href="#">Casuales</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">Estrategia</a></li>
-                            <li><a href="">Multijugador</a></li>
-                            <li><a href="">Rol</a></li>
-                            <li><a href="">Simulación</a></li>
+                            <li><a href="#">Estrategia</a></li>
+                            <li><a href="#">Multijugador</a></li>
+                            <li><a href="#">Rol</a></li>
+                            <li><a href="#">Simulación</a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,12 +119,12 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper swiper-wrapper2">
                             <!-- Slides -->
-                            <div class="swiper-slide"> <img src="/img/banner_2_acv.png" alt="img-banner2-acv"></div>
-                            <div class="swiper-slide"> <img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></div>
-                            <div class="swiper-slide"> <img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></div>
-                            <div class="swiper-slide"> <img src="/img/banner_2_acv.png" alt="img-banner2-acv"></div>
-                            <div class="swiper-slide"> <img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></div>
-                            <div class="swiper-slide"> <img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_acv.png" alt="img-banner2-acv"></a></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_acv.png" alt="img-banner2-acv"></a></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
+                            <div class="swiper-slide"> <a href="/productDetail"><img src="/img/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
                         </div>
                         <BR><BR>
                         <!-- If we need pagination -->
@@ -130,10 +133,10 @@
                 </section>
                 <section class="index__main__section-img-sueltas">
                     <article>
-                        <img src="/img/GoWR.jpg" alt="">
+                        <a href="/productDetail"><img src="/img/GoWR.jpg" alt=""></a>
                     </article>
                     <article>
-                        <img src="/img/csgo.jpg" alt="">
+                        <a href="/productDetail"><img src="/img/csgo.jpg" alt=""></a>
                     </article>
                 </section> 
             </section>
@@ -175,10 +178,12 @@
     </main>
     <footer>
         <article class="section__footer">
-            <section>
+            <section class="section__redes_sociales">
                 <div class="redes_sociales">
-                    <i class="fa-brands fa-tiktok"></i><i class="fa-brands fa-square-instagram"></i><i
-                        class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </section>
             <section>
