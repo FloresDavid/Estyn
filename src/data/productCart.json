@@ -1,0 +1,36 @@
+[
+    
+    { 
+        
+        "id" : 1,
+        "descripcion" : "blablablablablablablablabla",
+        "imagen" : "foto2.jpg",
+        "tipo": "digital",
+        "precio" : 140,
+        "cantidad": 5
+
+
+    },
+    { 
+        
+        "id" : 2,
+        "descripcion" : "blablablablablablablablabla",
+        "imagen" : "foto3.jpg",
+        "tipo": "digital",
+        "precio" : 299,
+        "cantidad": 7
+
+
+    },
+    { 
+        
+        "id" : 3,
+        "descripcion" : "blablablablablablablablabla",
+        "imagen" : "foto3.jpg",
+        "tipo": "fisico",
+        "precio" : 499,
+        "cantidad": 1
+
+
+}
+]

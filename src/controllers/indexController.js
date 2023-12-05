@@ -1,16 +1,20 @@
+const  {JSON} = require ("../data")
+
+
+
 module.exports = {
     index : (req,res) => {
         
         return res.render('index')
     },
     productcart : (req,res) => {
-        
-        return res.render('productcart')
-    },
+    const products = JSON('productCart')
+   
+    const total = products.reduce((e,m) => e + m.precio,0) 
 
 
-
-}
+        return res.render('productcart',{products,total})
+}}
 
 
 

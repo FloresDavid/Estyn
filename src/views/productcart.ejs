@@ -10,18 +10,20 @@
             <h1>Tu carrito</h1>
 
             <article class="productcart__article">
+                <% products.forEach(productos =>{ %>
                 <div class="productcart__article--juego">
-                <div class="productcart__article--imagen"><img src="/images/foto2.jpg" alt="">
+                <div class="productcart__article--imagen"><img src="/images/<%= productos.imagen %> %>" alt="">
                 </div>
-                <div class="productcart__article--descripcion"><p>DESCRIPCION DEL JUEGO</p>
+                <div class="productcart__article--descripcion"><h4><%- productos.descripcion %></h4>
                     <div class="productcart__article--precio">
-                        <p class="productcart__article--productodigital">Producto digital</p>
-                        <p>1920.52 ars</p>
+                        <p class="productcart__article--productodigital">pruducto <%- productos.tipo %></p>
+                        <p><%- productos.precio %></p>
                     </div>
                     <div class="productcart__article--cantidad">
-                        <p>+</p>
-                        <h4>1</h4>
-                        <p>-</p>
+
+                        <button> + </button>
+                        <h4><%- productos.cantidad %></h4>
+                        <button> - </button>
                 </div>
                 <div class="productcart__article--tachito">
                         <i class="fa-solid fa-trash-can"></i>
@@ -29,46 +31,7 @@
                 </div>
                 </div>
             </article>
-            <article class="productcart__article">
-                <div class="productcart__article--juego">
-                <div class="productcart__article--imagen"><img src="/images/foto2.jpg" alt="">
-                </div>
-                <div class="productcart__article--descripcion"><p>DESCRIPCION DEL JUEGO</p>
-                    <div class="productcart__article--precio">
-                        <p class="productcart__article--productodigital">Producto digital</p>
-                        <p>1920.52 ars</p>
-                    </div>
-                    <div class="productcart__article--cantidad">
-                        <p>+</p>
-                        <h4>1</h4>
-                        <p>-</p>
-                </div>
-                <div class="productcart__article--tachito">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-                </div>
-            </article>
-                <article class="productcart__article">
-                    <div class="productcart__article--juego">
-                    <div class="productcart__article--imagen"><img src="/images/foto2.jpg" alt="">
-                    </div>
-                    <div class="productcart__article--descripcion"><p>DESCRIPCION DEL JUEGO</p>
-                        <div class="productcart__article--precio">
-                            <p class="productcart__article--productodigital">Producto digital</p>
-                            <p>1920.52 ars</p>
-                        </div>
-                        <div class="productcart__article--cantidad">
-                            <p>+</p>
-                            <h4>1</h4>
-                            <p>-</p>
-                    </div>
-                        <div class="productcart__article--tachito">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div>
-                    </div>
-                </article>
+           
 
         </section>
         <section class="productcart__section2">
@@ -76,21 +39,16 @@
             <div class="productcart__section2--subircupon"><input type="text"> <button type="submit"></button></div>
             <div class="productcart__section2--total"> <p>RESUMEN:</p>
             <p class="productcart__section2--cantidad">3 productos</p>
-            
-            
+
                 <h2>TOTAL</h2>
-            <form action="">
-                
-                <label for="cupon"></label>
-                <input type="text" name="cupon" id="cupon">
-                </div>
-                <div class="productcart__section2--boton">
-                <button type="submit">Continuar con la compra</button>    
+                <div><h2><%- total %></h2></div>
+
                 </div>
             </form>
 
 
         </section>
+        <% }) %>
     </main>
     <footer>
         <article class="section__footer">
