@@ -5,7 +5,7 @@ module.exports = {
     },
     productcart : (req,res) => {
         
-        return res.render('products')
+        return res.render('productcart')
     },
 
 

@@ -5,7 +5,7 @@ const router = express.Router();
 /* / */
 
 router
-  .get('/detail/:id?',detail)
+  .get('/detalle/:id?',detail)
   
  
 

@@ -1,48 +1,9 @@
 
-<%- include("./partials/head") %>
+<%- include("./partials/head",{
+    title: "STYN - CARRITO"
+}) %>
 <body>
-    <header>
-        <p>Idioma ⌵ </p>
-        <a href="/">
-            <div class="logo-titulo">
-                <img class="logo-estyn" src="/img/Logo_Estyn.png" alt="">
-                <h2 class="text-logo">STYN</h2>
-            </div>
-        </a>
-        <nav>
-            <div>
-                <ul class="lista-header-dos">
-                    <li class="register-bottom"><a href="/register">Registrate</a></li>
-                    <li style="color: white;">|</li>
-                    <li class="register-bottom"><a href="/login">Login</a></li>
-                    <div class="icons-barra">
-                        <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
-                        <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li> 
-                        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                        <li><a href="/"><i class="fa-solid fa-house"></i></a></li>  
-                    </div>
-                </ul>
-            </div>
-            
-            <div class="div-padre-lista">
-            <ul class="lista-header">
-                <li><a href="#">PS3</a></li>
-                <li><a href="#">PS4</a></li>
-                <li><a href="#">PS5</a></li>
-                <li><a href="#">XBOX</a></li>
-                <li><a href="#">NINTENDO</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="/">INICIO</a></li>
-            </ul>
-            <div class="contenedor-busqueda-boton">
-                <input class="__input" placeholder="Buscar" type="text">    
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            </div>
-
-        </nav>
-    </header>
+    <%- include('./partials/header') %>
     <main class="productcart__main">
         
         <section class="productcart__section">

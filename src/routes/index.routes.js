@@ -6,7 +6,7 @@ const router = express.Router();
 
 router
   .get('/',index)
-  .get('/productcart',productcart)
+  .get('/carrito',productcart)
  
 
 

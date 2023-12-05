@@ -1,51 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('./partials/head') %>
+<%- include('./partials/head',{
+    title:"STYN"
+}) %>
 <body>
-    <header>
-        <p>Idioma ⌵ </p>
-        <a href="/">
-            <div class="logo-titulo"><img class="logo-estyn" src="/images/Logo_Estyn.png" alt="">
-                <h2 class="text-logo">STYN</h2>
-            </div>
-        </a>
-        <nav>
-            <div>
-                <ul class="lista-header-dos">
-                    <li class="register-bottom"><a href="/users/register">Registrate</a></li>
-                    <li style="color: white;">|</li>
-                    <li class="register-bottom"><a href="/login">Login</a></li>
-                    <div class="icons-barra">
-                        <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
-                        <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li> 
-                        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                        <li><a href="/"><i class="fa-solid fa-house"></i></a></li>  
-                    </div>
-                </ul>
-            </div>
-            <div class="div-padre-lista-buscador">
-            <div class="div-padre-lista">
-                <ul class="lista-header">
-                    <li><a href="#">PS3</a></li>
-                    <li><a href="#">PS4</a></li>
-                    <li><a href="#">PS5</a></li>
-                    <li><a href="#">XBOX</a></li>
-                    <li><a href="#">NINTENDO</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><a href="/">INICIO</a></li>
-                </ul>
-            </div>  
-            <div class="div-padre-buscador">
-                <div class="contenedor-busqueda-boton">
-                    <input class="__input" placeholder="Buscar" type="text">    
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </div>
-        </nav>
-    </header>
+    <%- include('./partials/header') %>
     <main class="index__main">
         <!--Slider principal de destacados-->
         <section class="index__main__section-destacados">
@@ -55,10 +15,10 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_ark.png" alt="img-banner-ark"></a></div>
-                    <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_fc24.jpg" alt="img-banner-fc24"></a></div>
-                    <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_stalker2.jpg" alt="img-banner-stalker2"></a></div>
-                    <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_codmw2.jpg" alt="img-banner-codmw2"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_ark.png" alt="img-banner-ark"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_fc24.jpg" alt="img-banner-fc24"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_stalker2.jpg" alt="img-banner-stalker2"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_codmw2.jpg" alt="img-banner-codmw2"></a></div>
                 </div>
                 <BR><BR>
                 <!-- If we need pagination -->
@@ -109,12 +69,12 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper swiper-wrapper2">
                             <!-- Slides -->
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_acv.png" alt="img-banner2-acv"></a></div>
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_acv.png" alt="img-banner2-acv"></a></div>
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
-                            <div class="swiper-slide"> <a href="/productDetail"><img src="/images/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_acv.png" alt="img-banner2-acv"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_acv.png" alt="img-banner2-acv"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_gtav.jpg" alt="img-banner2-gtav"></a></div>
+                            <div class="swiper-slide"> <a href="/productos/detalle"><img src="/images/banner_2_vh.jpg" alt="img-banner2-vh"></a></div>
                         </div>
                         <BR><BR>
                         <!-- If we need pagination -->
@@ -123,10 +83,10 @@
                 </section>
                 <section class="index__main__section-img-sueltas">
                     <article>
-                        <a href="/productDetail"><img src="/images/GoWR.jpg" alt=""></a>
+                        <a href="/productos/detalle"><img src="/images/GoWR.jpg" alt=""></a>
                     </article>
                     <article>
-                        <a href="/productDetail"><img src="/images/csgo.jpg" alt=""></a>
+                        <a href="/productos/detalle"><img src="/images/csgo.jpg" alt=""></a>
                     </article>
                 </section> 
             </section>

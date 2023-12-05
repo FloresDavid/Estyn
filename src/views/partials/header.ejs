@@ -1,27 +1,44 @@
 <header>
-    <p>Idioma ⌵ </p>
-    <a href="/">
-        <div class="logo-titulo">
-            <img class="logo-estyn" src="/images/Logo_Estyn.png" alt="">
-            <h2 class="text-logo">STYN</h2>
-        </div>
-    </a>
-    <nav>
-        <div>
-            <ul class="lista-header-dos">
-                <li class="register-bottom"><a href="/register">Registrate</a></li>
-                <li style="color: white;">|</li>
-                <li class="register-bottom"><a href="/login">Login</a></li>
-                <div class="icons-barra">
-                    <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
-                    <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li> 
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                    <li><a href="/"><i class="fa-solid fa-house"></i></a></li>  
+    <div>
+        <ul class="lista-header-dos">
+            <div class="icons-barra">
+                <li><a href="/"><i class="fa-solid fa-house"></i><br>Inicio</a></li>  
+                <li><a href="#"><i class="fa-solid fa-bars"></i><br>Productos</a></li>
+                <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i><br>Carrito</a></li>
+                <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i><br>Iniciar Sesion</a></li>
+                <li><a href="/usuarios/registro"><i class="fa-solid fa-pen-to-square"></i><br>Registrarse</a></li> 
+            </div>
+        </ul>
+    </div>
+    <div class="logo-menu-md-lg">
+        <a href="/">
+            <div class="logo-titulo">
+                <img class="logo-estyn" src="/images/Logo_Estyn.png" alt="">
+                <h2 class="text-logo">STYN</h2>
+            </div>
+        </a>
+        <div class="menu-md-lg">
+            <div class="idioma">
+                <p class="white-text">idioma ⌵</p>
+            </div>
+            <ul class="lista-header-dos-md-lg">
+                <div class="icons-barra-md-lg">
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i></a></li>
+                    <li class="white-text"><a href="/usuarios/ingreso">Iniciar Sesion</a></li> 
+                    <li class="white-text">|</li>
+                    <li class="white-text"><a href="/usuarios/registro">Registrarse</a></li> 
                 </div>
             </ul>
         </div>
-        
+    </div>
+    <nav>
+        <div class="busqueda-mobile contenedor-busqueda-boton">
+            <i class="fa-solid fa-filter"></i>
+            <input class="__input" placeholder=" Buscar" type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <div class="div-padre-lista">
         <ul class="lista-header">
             <li><a href="#">PS3</a></li>
@@ -33,7 +50,7 @@
             <li><a href="/">INICIO</a></li>
         </ul>
         <div class="contenedor-busqueda-boton">
-            <input class="__input" placeholder="Buscar" type="text">    
+            <input class="__input" placeholder=" Buscar" type="text">    
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         </div>
