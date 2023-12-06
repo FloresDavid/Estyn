@@ -6,6 +6,7 @@
     <%- include('./partials/header') %>
     <main class="productcart__main">
         <!--------------------------SECCION DE ARTICULOS DE PRODUCTOS ---------------------------->
+        
         <section class="productcart__section">
             <h1>Tu carrito</h1>
             <% products.forEach(productos =>{ %>
@@ -48,9 +49,9 @@
                 <i class="fa-solid fa-arrow-down"></i>
             </div>
         <div class="productcart__section2--cupon">
-            <form action="">
-                <input type="text">
-            <button type="submit"></button>
+            <form action="/carrito" method="POST">
+                <input type="search" name="cupon">
+                <button type="submit"></button>
             </form>
         </div>
 
@@ -61,7 +62,7 @@
             <div class="productos__comprados"><p>productos comprados: <%= products.length %></p></div>
         <div class="productcart__article--preciototal">
             <h2>TOTAL</h2>
-            <h2><%- total %></h2>
+            <h2><%- totalis %></h2>
         </div>
         <form action="" class="productcart__section2--button">
             <button type="submit">Continuar con la comprados</button>

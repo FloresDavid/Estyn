@@ -7,7 +7,7 @@ const router = express.Router();
 router
   .get('/',index)
   .get('/carrito',productcart)
- 
+  .post('/carrito',productcart)
 
 
 module.exports = router

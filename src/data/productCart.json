@@ -7,7 +7,7 @@
         "imagen" : "foto2.jpg",
         "tipo": "digital",
         "precio" : 9999,
-        "cantidad": 5
+        "cantidad": 1
 
 
     },
@@ -18,7 +18,7 @@
         "imagen" : "foto3.jpg",
         "tipo": "digital",
         "precio" : 299,
-        "cantidad": 7
+        "cantidad": 1
 
 
     },
