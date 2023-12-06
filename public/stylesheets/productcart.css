@@ -9,25 +9,179 @@ body{
 }
 /*CENTRADO TODO EL MAIN*/
 .productcart__main{
+
     margin: 0 10px;
-    padding-top: 5px;
+
+
+}
+
+/*SECCION DE TODOS LOS ARTICULOS*/
+.productcart__section{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 /*TU CARRITO BLOQUEADO EN CELULAR*/
 .productcart__section h1{
     display: none;
 }
-
-/*SECCION DE TODOS LOS PRODUCTOS*/
-.productcart__section{
+/*CADA ARTICULO*/
+.productcart__article{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    background-color: var(--colorAzulOscuro);
+    padding: 10px;
+   
 }
-/*FRASE "DESCRIPCION DEL PRODUCTO" QUE NO ESTA EN CELULAR*/
-.productcart__article--descripcion{
+/*IMAGEN DE LOS PRODUCTOS*/
+.productcart__article--imagen{
+    width: 100%;
+    border: black 1px solid;
+   
+}
+/*TEXTO DE LOS ARTICULOS OSEA LO QUE NO ES LA FOTO*/
+.productcart__article--texto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color:white
+}
+/*PRECIO Y LA PLATAFORMA */
+.productcart__article--precioytipo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 13px;
+}
+/*EL BOTON PARA AUMENTAR O DISMUNUIR LA CANTIDAD Y EL TACHO*/
+.productcart__article--botonytachito{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.productcart__article--botonSR{
+    display: flex;
+    gap: 5px;
+}
+
+/*----------SECCION DE CUPONES Y TOTAL------------*/
+.productcart__section2{
+margin-top: 7px;
+background-color: white;
+}
+
+/*TIENES ALGUN CUPON*/
+.productcart__section2--h4{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+    border-bottom: 1px black solid;
+}
+/*PARTE QUE SE OCULTA EN CELULAR Y TABLET PARA INCERTAR CUPONES*/
+.productcart__section2--cupon{
+    display: flex;
+    overflow: hidden;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.productcart__article--cupon:hover .productcart__section2--cupon{
+        height: 10%;
+        background-color: black;
+
+        width: 100%;
+    }
+    .productcart__section2--cupon input{
+        
+        padding: 10px;
+        background-color: gray;
+        border:none;
+    }
+    .productcart__section2--cupon button{
+       padding: 15px;
+       background-color: yellow;
+       border: none;
+    }
+
+
+
+
+.productos__comprados{
+    display: flex;
+    padding: 10px 0;
+}
+/*PRECIO TOTAL*/
+.productcart__article--preciototal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid black;
+}
+/*BOTON DE CONTINUAR COMPRA*/
+.productcart__section2--button{
+
+    text-align: center;
+
+
+}
+.productcart__section2--button button{
+    background-color: rgba(0, 255, 224, 1);
+    padding: 15px;
+    margin: 5px;
+    border: none;
+}
+@media (min-width:768px) {
+.productcart__article--imagen{
+    width: 40%;
+}
+.productcart__article--texto{
+    width: 50%;
+}
+    
+}
+@media (min-width:1024px) {
+.productcart__main{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*SECCION DE TODOS LOS ARTICULOS*/
+.productcart__section{
+    width: 50%;
+}
+/*----------SECCION DE CUPONES Y TOTAL------------*/
+.productcart__section2{
     width: 30%;
 }
-.productcart__article--imagen{
-    width: 47%;
+.productcart__section2--cupon{
+    height: 100%;
+    padding: 8px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productcart__section2--cupon input{
+    padding: 5px;
+    background-color: gray;
+    border:none;
+}
+.productcart__section2--cupon button{
+    padding: 10px;
+
+}
+
 }
 

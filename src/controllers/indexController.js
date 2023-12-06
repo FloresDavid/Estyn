@@ -12,8 +12,8 @@ module.exports = {
    
     const total = products.reduce((e,m) => e + m.precio,0) 
 
-
         return res.render('productcart',{products,total})
+        
 }}
 
 
