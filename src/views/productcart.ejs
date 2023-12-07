@@ -14,13 +14,13 @@
                 
                
                 <div class="productcart__article--imagen">
-                    <img src="/images/<%= productos.imagen %> %>" alt="">
+                    <img src="/images/<%= productos.imagenPrincipal %> %>" alt="">
                 </div>
                 <div class="productcart__article--texto">
-                    <p><%- productos.descripcion %></p>
+                    <p><%- productos.nombre %></p>
                 
                 
-                        <div class="productcart__article--precioytipo"><p class="productcart__article--productodigital">pruducto <%- productos.tipo %></p>
+                        <div class="productcart__article--precioytipo"><p class="productcart__article--productodigital">Plataforma: <%- productos.plataforma %></p>
                         <p>$<%- productos.precio %></p></div>
                     
                     
@@ -28,7 +28,7 @@
                 <div class="productcart__article--botonytachito">
                     <div class="productcart__article--botonSR">
                         <button> + </button>
-                        <h4><%- productos.cantidad %></h4>
+                        <h4><%- productos.stock %></h4>
                         <button> - </button>
                     </div>
                     <i class="fa-solid fa-trash-can"></i>
@@ -74,53 +74,8 @@
        
         
     </main>
-    <footer>
-        <article class="section__footer">
-            <section>
-                <div class="redes_sociales">
-                    <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h6 class="medios_pago"> Medios de pago</h6>
-                    <div class="icon_medios_pago">
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-amazon-pay"></i>
-                        <i class="fa-brands fa-cc-paypal"></i>
-                        <i class="fa-brands fa-cc-amex"></i>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h6 class="contacto">Contacto</h6>
-                </div>
-                <div class="contacto__tel">
-                    <i class="fa-solid fa-square-phone"></i>
-                    <p>+54911165230123</p>
-                </div>
-                <div class="whatsapp">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                    <p>Whatsapp +54911165230123</p>
-                </div>
-                <div class="mail">
-                    <i class="fa-solid fa-square-envelope"></i>
-                    <p>estyn@gmail.com</p>
-                </div>
-                <div class="ubicacion">
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <p>Santiago Del Estero-
-                        La Banda-
-                        Salavinos Nº253</p>
-                </div>
-            </section>
-        </article>
-        </article>
-    </footer>
+
+    <%- include('../partials/footer') %>
+
 </body>
 </html>

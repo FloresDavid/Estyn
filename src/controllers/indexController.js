@@ -9,7 +9,7 @@ module.exports = {
     },
     
     productcart : (req,res) => {
-    const products = JSON('productCart')
+    const products = JSON('products')
    
     /*--- PRECIO TOTAL---*/
 

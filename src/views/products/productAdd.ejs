@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="ES">
+
+<%- include('../partials/head',{
+	title : 'Nuevo'
+}) %>
+
+
+<body>
+	<%- include('../partials/header-admin') %>
+    <main class="container">
+        <section class="row my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/dashboard" class="text-primary">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Nuevo Restaurant</li>
+                            </ol>
+                          </nav>
+                        <a class="btn btn-dark" href="/productos/agregar">Nuevo</a>
+                    </div>  
+                    <div class="card-body">
+                        <form action="" class="row">
+                            <h3>Nuevo Restaurante</h3>
+                            <hr>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input name="name" type="text" class="form-control" id="name">
+                                    <label for="name">Restaurant</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input name="address" type="text" class="form-control" id="adress">
+                                    <label for="adress">Direccion</label>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3 d-flex align-item-center text-align-center">
+                                    <input name="mainimage" type="file" class="form-control" id="main-image" hidden>
+                                    <label class="btn-lg btn-outline-dark w-100" for="main-image">Imagen principal</label>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3 d-flex align-item-center text-align-center">
+                                    <input name="images" type="file" class="form-control" id="images" hidden multiple>
+                                    <label class="btn-lg btn-outline-dark w-100" for="images">Imagenes</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="descripcion" id="description" style="height: 150px;"></textarea>
+                                    <label for="description">descripcion</label>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <select name="category" class="form-select" id="category" aria-label="Floating label select example">
+                                      <option value="" selected hidden>Seleccionar</option>
+                                      <option value="barato">Barato</option>
+                                      <option value="romantico">Romantico</option>
+                                      <option value="sofisticado">Sofisticado</option>
+                                    </select>
+                                    <label for="category">Categoria</label>
+                                  </div>
+                            </div>
+                            <div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="btn-lg btn-dark w-100">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <%- include('../partials/scripts') %>
+
+</body>
+</html>
