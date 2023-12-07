@@ -1,0 +1,117 @@
+.product-edit-main label {
+    font-size: small;
+}
+.product-edit-main input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.product-edit-main select {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.product-edit-main {
+    padding: 0 5%;
+}
+.product-edit-title {
+    color: white;
+    text-align: center;
+}
+.product-edit-main-section {
+    margin: 4% 0;
+    background-color: var(--colorGrisClaro);
+}
+.product-edit-main-section-div {
+    padding: 5%;
+}
+.product-edit-container-de-form {
+    padding-top: 3%;
+}
+.product-edit-juego {
+    display: block;
+}
+.product-edit-juego input{
+    width:100%;
+}
+.product-edit-precio-plataforma-stock {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-edit-precio {
+    width: 32%;
+}
+.product-edit-precio input{
+    width: 100%;
+}
+.product-edit-plataforma {
+    width: 32%;
+}
+.product-edit-plataforma select {
+    width: 100%;
+}
+.product-edit-stock {
+    width: 32%;
+}
+.product-edit-stock input{
+    width: 100%;
+}
+.product-edit-descripcion{
+    padding: 2% 0;
+}
+.product-edit-descripcion textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-top: 1%;
+}
+.product-edit-img-pri-stock {
+    display: flex;
+}
+.product-edit-img-pri input {
+    width: -webkit-fill-available;
+    height: max-content;
+    margin-bottom: 5%;
+}
+@media (min-width: 768px) {
+    .product-edit-main label {
+        font-size: medium;
+    }
+    .product-edit-main-section-div h6 {
+        font-size: 13px;
+    }
+    .product-edit-container-de-form input{
+        height: 35px;
+    }
+    .product-edit-container-de-form select{
+        height: 35px;
+    }
+    .product-edit-img-pri input {
+        height: max-content;
+    }
+    .product-edit-container-de-form form *{
+        font-size: large;
+    }
+}
+@media (min-width: 1024px) {
+    .product-edit-main-section-div h6 {
+        font-size: 16px;
+    }
+    .product-edit-container-de-form input{
+        height: 60px;
+    }
+    .product-edit-container-de-form select{
+        height: 60px;
+    }
+    .product-edit-img-pri input {
+        height: max-content;
+    }
+    .product-edit-container-de-form form *{
+        font-size: x-large;
+    }
+}
