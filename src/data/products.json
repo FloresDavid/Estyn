@@ -1,0 +1,42 @@
+[
+    { 
+        "id" : 1,
+        "nombre" : "Assassin's Creed Valhalla - PS5",
+        "imagenPrincipal" : "assassins-creed-valhalla-ps5.webp",
+        "plataforma": "PS5",
+        "precio" : 61500.99,
+        "stock": 1
+    },
+    { 
+        "id" : 2,
+        "nombre" : "Grand Theft Auto V - Premium Edition - PS4",
+        "imagenPrincipal" : "grand-theft-auto-v-premium-edition-ps4.webp",
+        "plataforma": "PS4",
+        "precio" : 43999.99,
+        "stock": 1
+    },
+    { 
+        "id" : 3,
+        "nombre" : "Everybody Dance 2 - PS3",
+        "imagenPrincipal" : "everybody-dance-2-ps3.webp",
+        "plataforma": "PS3",
+        "precio" : 10399.99,
+        "stock": 1
+    },
+    { 
+        "id" : 4,
+        "nombre" : "NBA 2K17 - XBOX ONE",
+        "imagenPrincipal" : "nba-2k17-xbox-one.webp",
+        "plataforma": "XBOX ONE",
+        "precio" : 5599.99,
+        "stock": 1
+    },
+    { 
+        "id" : 5,
+        "nombre" : "Super Smash Bros. - Ultimate - Nintendo Switch",
+        "imagenPrincipal" : "super-smash-bros-ultimate-nintendo-switch.webp",
+        "plataforma": "Nintendo Switch",
+        "precio" : 87999.99,
+        "stock": 1
+    }
+]

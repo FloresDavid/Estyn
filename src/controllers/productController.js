@@ -1,8 +1,23 @@
+const { JSON } = require("../data");
+
 module.exports = {
     detail : (req,res) => {
         
-        return res.render('products/productDetail')
-    },
+        const {id} = req.params;
 
+        const products = JSON('products');
+
+        const product = products.find(product => product.id === +id)
+
+        return res.render('products/productDetail', {
+            ...product
+        })
+    },
+    add: (req,res) => {
+        return res.render('products/productAdd')
+    },
+    edit: (req,res) => {
+        return res.render('products/productEdit')
+    }
 
 }
