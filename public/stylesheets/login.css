@@ -2,14 +2,24 @@ ul{
     list-style: none;
 }
 
+
+.div__logo img{
+    width: 50%;
+}
+.div__logo{
+    padding: 1px;
+   width: 100%;
+    text-align: start;  
+}
 .login__main{
-    font-family: 'Raleway', sans-serif;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
    align-items: center;
 
 }
+
 /*LOGO STYN*/
 .login__logostyn{
     display: flex;
@@ -101,6 +111,12 @@ ul{
     .login__main{
         flex-direction: row;
     }
+
+    .div__logo{
+    position: absolute;
+    bottom: 63%;
+    width: 60%;
+    }
     /*SALUDO DE ALEGRA VERTE*/
 
     .login__saludo{
@@ -131,5 +147,10 @@ ul{
     .login__sectionform{
         width: 48%;
     }
+    .div__logo{
+        position: absolute;
+        right:60%;
+        width: 30%;
+        }
 
 }
