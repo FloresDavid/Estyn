@@ -7,8 +7,9 @@
 <body>
     <%- include('../partials/header') %>
     <main>
+        
         <section class="product_detail">
-            <h1>7 days to die | ps4</h1>
+            <h1><%= nombre  %></h1>
 
             <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -22,7 +23,8 @@
             <article class="main__product">
                 <div class="product-info">
                     <div>
-                        <img class="main_image" src="/images/7-days-To-Die.png" alt="50px">
+                        <img class="main_image" src="/images/<%= imagenPrincipal %>" alt="50px">
+                        
                         <!-- Swiper -->
                         <div class="swiper mySwiper mySwiperpd1">
                             <div class="swiper-wrapper swiper-wrapperpd1">
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <div class="add_cart">
-                    <div class="precio">$26,000
+                    <div class="precio"><%= precio %>
 
                         <button>Medios de pago</button>
                     </div>
@@ -61,35 +63,8 @@
             </article>
             <article>
                 <h2 class="descripcion">Descripción</h2>
-                <p>Descripción
-                    7 Days to Die (7DTD) es un videojuego perteneciente
-                    al género de terror, mundo abierto, sandbox basado
-                    en voxel y supervivencia, creado por la empresa
-                    The Fun Pimps. Es un videojuego mash up de acción
-                    en primera y tercera persona, el videojuego combina
-                    el combate, la mejora del personaje por niveles, la
-                    elaboración de materiales, la construcción, el saqueo,
-                    la minería, la exploración, la comercialización,
-                    la agricultura y la personalización del personaje. <br>
-                    <br>
-                    La historia se ambienta en un futuro próximo, donde
-                    una tercera guerra mundial ha dejado a la tierra en
-                    ruinas, los humanos están hundidos en odio y dolor.
-                    Muchos creían que todo esto ocurría por causa de la
-                    radiación, las armas bioquímicas o un acto de dios,
-                    pero no era ninguna de las anteriores, sino que todo
-                    era a causa de un virus desconocido que pronto
-                    transformaría a los humanos supervivientes en un
-                    ejército de muertos vivientes, actuando como un ser
-                    de una sola mente. <br>
-                    <br>
-                    El jugador toma el papel de un superviviente atrapado
-                    en un mundo salvaje infestado por zombis del
-                    condado Navezgane, Arizona: uno de los últimos
-                    verdaderos edén en la tierra. La palabra Navezgane
-                    significa "asesino de monstruos" en apache.
-                    Los apaches habían habitado la tierra desde hace
-                    siglos.
+                <p>
+                    <%= descripcion %>
                 </p>
 
                 <h3>Reseñas: 1</h3>
@@ -142,13 +117,13 @@
                         </div>
                 </section>
                 <section class="reseñas__coment">
-                    <h5><i class="fa-solid fa-circle-user"></i>LorenaB 12/10/2023</h5>
-                    <p>El juego está muy bueno, solo que, llegas a una etapa donde se pone complicado
-                        avanzar. Los monstruos son cada vez más dificiles y no tengo ganas de seguir perdiendo tiempo de
-                        mi
-                        vida en un jueguito. Mejor me voy a estudiar, programación web con
-                        el profe Eric y Nath..ahre(?.</p>
+                    <% comentarios.forEach(user => { %>
+                     
+                    
+                    <h5><i class="fa-solid fa-circle-user"></i><%= user.usuario %></h5>
+                    <p><%- user.comentario %></p>
                 </section>
+                <% }) %>
             </article>
 
             <article>

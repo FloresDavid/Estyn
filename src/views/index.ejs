@@ -69,12 +69,11 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper swiper-wrapper2">
                             <!-- Slides -->
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/assassins-creed-valhalla-ps5.webp" alt="assassins-creed-valhalla-ps5"></a></div>
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/grand-theft-auto-v-premium-edition-ps4.webp" alt="grand-theft-auto-v-premium-edition-ps4"></a></div>
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/everybody-dance-2-ps3.webp" alt="everybody-dance-2-ps3"></a></div>
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/nba-2k17-xbox-one.webp" alt="nba-2k17-xbox-one"></a></div>
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/super-smash-bros-ultimate-nintendo-switch.webp" alt="super-smash-bros-ultimate-nintendo-switch"></a></div>
-                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle"><img src="/images/assassins-creed-valhalla-ps5.webp" alt="assassins-creed-valhalla-ps5"></a></div>
+                            <% products.forEach(productos => { %>
+                            
+                            <div class="swiper-slide swiper-slide2"> <a href="/productos/detalle/<%-productos.id %>"><img src="/images/<%-productos.imagenPrincipal %>" alt="assassins-creed-valhalla-ps5"></a></div>
+                            
+                            <% }) %>
                         </div>
                         <BR><BR>
                         <!-- If we need pagination -->
@@ -127,8 +126,8 @@
         </script>
     </main>
 
-    <%- include('../partials/footer') %>
+    <%- include('./partials/footer') %>
 
-</bod y>
+</body>
 
 </html>

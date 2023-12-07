@@ -5,7 +5,8 @@
         "imagenPrincipal" : "assassins-creed-valhalla-ps5.webp",
         "plataforma": "PS5",
         "precio" : 61500.99,
-        "stock": 1
+        "stock": 1,
+        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
     },
     { 
         "id" : 2,
@@ -13,7 +14,9 @@
         "imagenPrincipal" : "grand-theft-auto-v-premium-edition-ps4.webp",
         "plataforma": "PS4",
         "precio" : 43999.99,
-        "stock": 1
+        "stock": 1,
+        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        
     },
     { 
         "id" : 3,
@@ -21,7 +24,8 @@
         "imagenPrincipal" : "everybody-dance-2-ps3.webp",
         "plataforma": "PS3",
         "precio" : 10399.99,
-        "stock": 1
+        "stock": 1,
+        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
     },
     { 
         "id" : 4,
@@ -29,7 +33,8 @@
         "imagenPrincipal" : "nba-2k17-xbox-one.webp",
         "plataforma": "XBOX ONE",
         "precio" : 5599.99,
-        "stock": 1
+        "stock": 1,
+        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
     },
     { 
         "id" : 5,
@@ -37,6 +42,7 @@
         "imagenPrincipal" : "super-smash-bros-ultimate-nintendo-switch.webp",
         "plataforma": "Nintendo Switch",
         "precio" : 87999.99,
-        "stock": 1
+        "stock": 1,
+        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
     }
 ]
