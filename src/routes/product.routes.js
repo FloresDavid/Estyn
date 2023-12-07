@@ -9,7 +9,4 @@ router
   .get('/agregar', add)
   .get('/editar/:id?', edit)
   
- 
-
-
 module.exports = router
