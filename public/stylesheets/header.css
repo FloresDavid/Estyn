@@ -1,12 +1,12 @@
 
-header {
+.public-header {
     background: rgb(217,217,217);
     background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(39,39,135,1) 0%, rgba(9,9,121,0.9473039215686274) 47%, rgba(47,54,186,1) 66%);
     /* padding: 20px; */
     /* height: 162px; */
 }
 
-header section { 
+.public-header section { 
     display: flex;
     justify-content: space-between;
 }
@@ -18,11 +18,11 @@ header section {
     font-size: 1.5rem;
 }   
 
-header nav ul {
+.public-header nav ul {
     margin-top: 10px;
 }
 
-header nav ul li {
+.public-header nav ul li {
     padding: 2px 0;
     list-style: none;
 }
@@ -117,7 +117,7 @@ header nav ul li {
 
 .logo-titulo h2 {   
     position: absolute;
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 30px;
     margin-left: 95px;
     border-top: 0;
@@ -144,7 +144,7 @@ header nav ul li {
 }
 
 .logo-estyn {
-    width: 170px;
+    width: 100px;
 }
 
 header nav ul li a {
