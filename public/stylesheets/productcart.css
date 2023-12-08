@@ -41,8 +41,10 @@ body{
     border: black 1px solid;
    
 }
+
 /*TEXTO DE LOS ARTICULOS OSEA LO QUE NO ES LA FOTO*/
 .productcart__article--texto{
+    padding: 5px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +53,7 @@ body{
 }
 /*PRECIO Y LA PLATAFORMA */
 .productcart__article--precioytipo{
+    font-family: 'Arial Narrow', Arial, sans-serif;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -121,6 +124,7 @@ background-color: white;
 }
 /*PRECIO TOTAL*/
 .productcart__article--preciototal{
+    font-family: 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
