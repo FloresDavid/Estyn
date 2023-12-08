@@ -21,7 +21,7 @@
                 
                 
                         <div class="productcart__article--precioytipo"><p class="productcart__article--productodigital">Plataforma: <%- productos.plataforma %></p>
-                        <p>$<%- productos.precio %></p></div>
+                        <p>$<%- Intl.NumberFormat('de-DE').format(productos.precio) %></p></div>
                     
                     
 
@@ -62,7 +62,7 @@
             <div class="productos__comprados"><p>productos comprados: <%= products.length %></p></div>
         <div class="productcart__article--preciototal">
             <h2>TOTAL</h2>
-            <h2><%- totalis %></h2>
+            <h2><%- Intl.NumberFormat('de-DE').format(totalis) %></h2>
         </div>
         <form action="" class="productcart__section2--button">
             <button type="submit">Continuar con la comprados</button>

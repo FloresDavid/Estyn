@@ -18,7 +18,13 @@ module.exports = {
         return res.render('products/productAdd')
     },
     edit: (req,res) => {
-        return res.render('products/productEdit')
+
+        const {id} = req.params;
+        const products = JSON('products')
+        const product =  products.find (product => product.id === +id);
+        return res.render('products/productEdit', {
+            ...product
+        })
     }
 
 }

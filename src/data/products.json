@@ -6,7 +6,7 @@
         "plataforma": "PS5",
         "precio" : 61500.99,
         "stock": 1,
-        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        "descripcion":"Conviértete en Eivor, un poderoso saqueador vikingo y lidera a tu clan desde las inclementes costas de Noruega a un nuevo hogar en medio de las exuberantes tierras de cultivo de la Inglaterra del siglo IX. Explora un hermoso y misterioso mundo abierto donde te enfrentarás a brutales enemigos, saquearás fortalezas, construirás el nuevo asentamiento de tu clan y forjarás alianzas para conseguir la gloria y obtener un lugar en el Valhalla. Inglaterra, en la época de los vikingos, es una nación fracturada llena de amos mezquinos y reinos en guerra. Debajo de todo el caos yace una tierra salvaje y llena de abundancia que espera a un nuevo conquistador. ¿Serás tú?"
     },
     { 
         "id" : 2,
@@ -15,7 +15,7 @@
         "plataforma": "PS4",
         "precio" : 43999.99,
         "stock": 1,
-        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        "descripcion":"Un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal, del gobierno de los EE. UU. y de la industria del espectáculo, y tendrán que llevar a cabo una serie de peligrosos golpes para sobrevivir en una ciudad implacable en la que no pueden confiar en nadie. Y mucho menos los unos en los otros."
         
     },
     { 
@@ -25,7 +25,7 @@
         "plataforma": "PS3",
         "precio" : 10399.99,
         "stock": 1,
-        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        "descripcion":"40 nuevas canciones que te prohibirán quedarte quieto, un nuevo modo multijugador y la opción de compartir fotos y videos de tus rutinas en las redes sociales, con éxitos de artistas como Gwen Stefani, Nicki Minaj, Selena Gomez, One Direction, Lady Gaga, Basement Jaxx y más."
     },
     { 
         "id" : 4,
@@ -34,7 +34,7 @@
         "plataforma": "XBOX ONE",
         "precio" : 5599.99,
         "stock": 1,
-        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        "descripcion":"Con Paul George como figura destacada de esta entrega y la inclusión de equipos de la Euroliga, los jugadores podrán disfrutar de la mejor simulación de este deporte, con modos de juegos variados y mejoras significativas en el control de la pelota para vivir una de sus versiones más realistas."
     },
     { 
         "id" : 5,
@@ -43,6 +43,6 @@
         "plataforma": "Nintendo Switch",
         "precio" : 87999.99,
         "stock": 1,
-        "descripcion":"Descripción 7 Days to Die (7DTD) es un videojuego perteneciente al género de terror, mundo abierto, sandbox basado en voxel y supervivencia, creado por la empresa The Fun Pimps. Es un videojuego mash up de acción en primera y tercera persona, el videojuego combina el combate, la mejora del personaje por niveles, la elaboración de materiales, la construcción, el saqueo, la minería, la exploración, la comercialización, la agricultura y la personalización del personaje."
+        "descripcion":"Prepárate para disfrutar de la acción y la pelea en Super Smash Bros. Ultimate, la edición estándar en formato físico para Nintendo Switch. Este emocionante videojuego, desarrollado por Nintendo, Sora y Bandai Namco, te ofrece horas de diversión con tus personajes favoritos en un enfrentamiento épico."
     }
 ]
