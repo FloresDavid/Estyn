@@ -7,6 +7,6 @@ const router = express.Router();
 router
   .get('/detalle/:id?',detail)
   .get('/agregar', add)
-  .get('/editar/:id?', edit)
+  .get('/editar/:id?', edit) 
   
 module.exports = router
