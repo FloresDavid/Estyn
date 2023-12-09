@@ -25,6 +25,7 @@
 .public-header nav ul li {
     padding: 2px 0;
     list-style: none;
+    border-right: 1px black solid;
 }
 .menu-md-lg {
     display: none;

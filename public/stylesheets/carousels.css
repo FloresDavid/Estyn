@@ -8,11 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .swiper-slide a img {
   display: block;
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit:scale-down;
 }
