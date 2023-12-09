@@ -1,10 +1,14 @@
 .index__main {
     width: 90%;
     margin-left: 5%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+    border-radius: 10px;
 }
-.index__main__section-destacados h3{
+
+.index__main__section-destacados h1{
     text-align: center;
+    padding: 20px;
 }
 .index__main__section-explorar-banner2-imgs {
     display: block;
@@ -21,16 +25,28 @@
 .index__main__div__div-generos div{
     display: flex;
     justify-content: space-between;
+    
 }
 .index__main__div__div-generos div ul {
     margin-left: 10px;
+   text-decoration: underline;
+   color: blue;
 }
+
 .index__main__section-img-sueltas article img {
     width: -webkit-fill-available;
     padding: 5% 20px;
 }
+.index__main__section-img-sueltas article img:hover{
+    padding: 10px;
+}
 .index__main__section-img-sueltas {
     margin-bottom: 5%;
+}
+
+/*AGREGADO POR EMILIANO*/
+.index__main__section-banner2-imgs h2{
+    border-bottom: 1px black solid;
 }
 @media (min-width:768px) {
     .index__main__section-img-sueltas{

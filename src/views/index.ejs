@@ -9,7 +9,7 @@
     <main class="index__main">
         <!--Slider principal de destacados-->
         <section class="index__main__section-destacados">
-            <h3>DESTACADOS Y RECOMENDADOS</h3>
+            <h1>NOVEDADES DESTACADAS</h1>
             <!-- Slider main container -->
             <div class="swiper mySwiper1">
                 <!-- Additional required wrapper -->
@@ -36,8 +36,8 @@
                 <div class="index__main__div__div-categorias">
                     <h4><B>EXPLORAR CATEGORÍAS</B></h4>
                     <p><a href="#">Lo más vendido</a></p>
-                    <p><a href="#">Novedades</a></p>
-                    <p><a href="#">Próximamente</a></p>
+                    <p><a href="#">Lo más jugado</a></p>
+             
                 </div>
                 <!--menu generos-->
                 <div class="index__main__div__div-generos">
@@ -63,6 +63,7 @@
             <br>
             <section class="index__main__section-banner2-imgs">
                 <!--slider secundario-->
+                <h2>RECOMENDADO</h2>
                 <section class="index__main__section-banner2">
                     <!-- Slider main container -->
                     <div class="swiper mySwiper2">
@@ -80,14 +81,11 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </section>
-                <section class="index__main__section-img-sueltas">
-                    <article>
-                        <a href="/productos/detalle"><img src="/images/GoWR.jpg" alt=""></a>
-                    </article>
-                    <article>
-                        <a href="/productos/detalle"><img src="/images/csgo.jpg" alt=""></a>
-                    </article>
-                </section> 
+                
+            <%- include("./partials/categoriasIndex") %>
+
+
+
             </section>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
