@@ -8,7 +8,7 @@
 
 
 
-section {
+.section-dashboard {
     justify-content: center;
     min-height: 100vh;
     display: flex;
@@ -24,31 +24,30 @@ section {
 }
 
 .table-admin {
-    color: #ffff;
     font-size: 14px;
     table-layout: fixed;
     border-collapse: collapse;
-    background-color: black;
+    background-color: #ffff;
     width: 100%;
 }
 
-th {
+.id-admin, .nombre-admin, .categoria-admin, .plataforma-admin, .stock-admin, .precio-admin {
     padding: 20px 15px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-td {
+.tbody-dashboard tr td {
     padding: 15px;
     border-bottom: solid 1px;
 }
 
-tbody {
+.tbody-dashboard{
     cursor: pointer;
 }
 
-tbody tr:hover {
-    background: rgba(242, 103, 199, 0.4);
+.tbody-dashboard tr:hover {
+    background: rgba(103, 41, 175, 0.4);
 }
 
 .boton-dashboard{
@@ -61,21 +60,21 @@ tbody tr:hover {
     padding-bottom: 20px;
 }
 
-.id {
+.id-admin {
     width: 8%;
 }
-.nombre {
+.nombre-admin {
     width: 42%;
 }
-.categoria {
+.categoria-admin {
     width: 20%;
 }
-.plataforma {
+.plataforma-admin {
     width: 10%;
 }
-.stock {
+.stock-admin {
     width: 10%;
 }
-.precio {
+.precio-admin {
     width: 10%;
 }
