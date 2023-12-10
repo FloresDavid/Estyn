@@ -5,17 +5,20 @@ margin: 10;
  .redes_sociales {
     padding-top: 30px;
     padding-left: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .redes_sociales i {
     margin: 10px;
     font-size: 2em;
+    color: #fff;
 }
 
 .medios_pago {
     padding-left: 40px;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -27,12 +30,13 @@ margin: 10;
 .icon_medios_pago i {
     margin: 10px;
     font-size: 2em;
+    color: #fff;
 }
 
 .contacto {
     padding-left: 40px;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
 }
 .contacto__tel, .whatsapp, .mail, .ubicacion{
@@ -43,6 +47,7 @@ margin: 10;
 .contacto__tel i, .whatsapp i, .mail i, .ubicacion i{
     margin-right: 20px;
     font-size: 2em; 
+    color: #fff;
 }
 .contacto__tel p, .whatsapp p, .mail p, .ubicacion p{
     color: #fff;

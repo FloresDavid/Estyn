@@ -1,220 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include('../partials/head',{
-    title:"STYN - DETALLE"
-}) %>
-<body>
-    <%- include('../partials/header') %>
-    <main>
-        
-        <section class="product_detail">
-            <h1><%= nombre  %></h1>
+<%- include('../partials/head',{ title:"STYN - DETALLE" }) %>
 
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-                <p>3.45/5 de Rating</p>
-            </div>
+    <body>
+        <%- include('../partials/header') %>
+            <main>
 
-            <article class="main__product">
-                <div class="product-info">
-                    <div>
-                        <img class="main_image" src="/images/<%= imagenPrincipal %>" alt="50px">
-                        
-                        <!-- Swiper -->
-                        <div class="swiper mySwiper mySwiperpd1">
-                            <div class="swiper-wrapper swiper-wrapperpd1">
-                                <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-2.jpeg" alt="">
-                                </div>
-                                <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-3.webp" alt="">
-                                </div>
-                                <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-4.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-5.jpg" alt="">
+                <section class="product_detail">
+                    <h1>
+                        <%= nombre %>
+                    </h1>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>3.45/5 de Rating</p>
+                    </div>
+
+                    <article class="main__product">
+                        <div class="product-info">
+                            <div>
+                                <img class="main_image" src="/images/<%= imagenPrincipal %>" alt="50px">
+
+                                <!-- Swiper -->
+                                <div class="swiper mySwiper mySwiperpd1">
+                                    <div class="swiper-wrapper swiper-wrapperpd1">
+                                        <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-1.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-2.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-3.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-4.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slidepd1"><img src="/images/7dtd-banner-5.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <br><br>
+                        </div>
+                        <div class="add_cart">
+                            <div class="precio">
+                                <%= precio %>
+                            </div>
+                            <div class="medio__pago">
+                                <button>Medios de pago</button>
+                            </div>
+                            <div class="cantidad">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+
+                            <div class="add__carrito">
+                                <button>Agregar a mi carrito</button>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article>
+                        <h2 class="descripcion">Descripción</h2>
+                        <p>
+                            <%= descripcion %>
+                        </p>
+                        <br>
+
+                        <h3>Reseñas: 2</h3>
+                        <article class="reseñas">
+                            <div class="reseñas__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <p>Jugabilidad</p>
+                            </div>
+                            <div class="reseñas__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <p>Historia</p>
+                            </div>
+                            <div class="reseñas__stars"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p>Gráficos</p>
+                            </div>
+                            <div class="reseñas__stars"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                <p>Soundtrack</p>
+                            </div>
+                            <div class="comentar">
+                                <button>Comentá ahora</button>
+                            </div>
+                        </article>
+
+                        <section class="comentarios">
+                            <div class="comentarios__stars">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="comentarios__hands">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                    <h6>+3</h6>
+                                </div>
+                        </section>
+                        <section class="reseñas__coment">
+                            <% comentarios.forEach(user=> { %>
+
+
+                                <h5><i class="fa-solid fa-circle-user"></i>
+                                    <%= user.usuario %>
+                                </h5>
+                                <p><%- user.comentario %></p>
+
+                                <% }) %>
+                        </section>
+                    </article>
+
+
+                    <article class="p_relacionados">
+                        <h3>PRODUCTOS RELACIONADOS</h3><br>
+                        <div class="swiper mySwiper mySwiperpd2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/theLastOfUs.jpg" alt="">
+                                        <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
+                                        <p>$20.000</p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/residentEvil4.jpg" alt="">
+                                        <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
+                                        <p>$13.000</p>
+                                        <p class="oferta">OFERTA</p>
+                                        <br>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/StateOfDecay2.webp" alt="">
+                                        <P class="name_games">State Of Decay <br> 2 XBOX</P>
+                                        <p>$17.000</p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/theLastOfUs.jpg" alt="">
+                                        <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
+                                        <p>$20.000</p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/residentEvil4.jpg" alt="">
+                                        <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
+                                        <p>$13.000</p>
+                                        <p class="oferta">OFERTA</p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide swiper-slidepd2">
+                                    <article class="producto__relacionado">
+                                        <img class="img_game" src="/images/StateOfDecay2.webp" alt="">
+                                        <P class="name_games">State Of Decay  <br> | 2 XBOX</P>
+                                        <p>$17.000</p>
+                                    </article>
+                                </div>
+                            </div>
                             <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="add_cart">
-                    <div class="precio"><%= precio %>
+                    </article>
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                        <button>Medios de pago</button>
-                    </div>
-                    <div class="cantidad">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiperpd1", {
+                            slidesPerView: 3,
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                        });
+                    </script>
+                    <!--swiper 2 productos relacionados-->
+                    <script>
+                        var swiper = new Swiper(".mySwiperpd2", {
+                            slidesPerView: 3,
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                        });
+                    </script>
+            </main>
 
-                    <div class="add__carrito">
-                        <button>Agregar a mi carrito</button>
-                    </div>
+            <%- include('../partials/footer') %>
 
-                </div>
-            </article>
-            <article>
-                <h2 class="descripcion">Descripción</h2>
-                <p>
-                    <%= descripcion %>
-                </p>
-
-                <h3>Reseñas: 1</h3>
-                <article class="reseñas">
-                    <div class="reseñas__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>Jugabilidad</p>
-                    </div>
-                    <div class="reseñas__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>Historia</p>
-                    </div>
-                    <div class="reseñas__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
-                            class="fa-regular fa-star"></i>
-                        <p>Gráficos</p>
-                    </div>
-                    <div class="reseñas__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
-                            class="fa-regular fa-star"></i>
-                        <p>Soundtrack</p>
-                    </div>
-                    <div class="comentar">
-                        <button>Comentá ahora</button>
-                    </div>
-                </article>
-
-                <section class="comentarios">
-                    <div class="comentarios__stars">
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-
-                        <div class="comentarios__hands">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                            <h6>+3</h6>
-                        </div>
-                </section>
-                <section class="reseñas__coment">
-                    <% comentarios.forEach(user => { %>
-                     
-                    
-                    <h5><i class="fa-solid fa-circle-user"></i><%= user.usuario %></h5>
-                    <p><%- user.comentario %></p>
-                </section>
-                <% }) %>
-            </article>
-
-            <article>
-                <h3>PRODUCTOS RELACIONADOS</h3><br>
-                <div class="swiper mySwiper mySwiperpd2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/theLastOfUs.jpg" alt="">
-                                <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
-                                <p>$20.000</p>
-                            </article>
-                        </div>
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/residentEvil4.jpg" alt="">
-                                <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
-                                <p>$13.000</p>
-                                <p class="oferta">OFERTA</p>
-                            </article>
-                        </div>
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/StateOfDecay2.webp" alt="">
-                                <P class="name_games">State Of Decay <br> 2 XBOX</P>
-                                <p>$17.000</p>
-                            </article>
-                        </div>
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/theLastOfUs.jpg" alt="">
-                                <p class="name_games">The Last Of Us <br> Remastered | PS4</p>
-                                <p>$20.000</p>
-                            </article>
-                        </div>
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/residentEvil4.jpg" alt="">
-                                <P class="name_games">Residet Evil 4 <br> Remastered | PS5</P>
-                                <p>$13.000</p>
-                                <p class="oferta">OFERTA</p>
-                            </article>
-                        </div>
-                        <div class="swiper-slide swiper-slidepd2">
-                            <article class="producto__relacionado">
-                                <img class="img_game" src="/images/StateOfDecay2.webp" alt="">
-                                <P class="name_games">State Of Decay <br> 2 XBOX</P>
-                                <p>$17.000</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </article>
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiperpd1", {
-                    slidesPerView: 3,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                });
-            </script>
-                    <!--swiper 2 productos relacionados-->    
-            <script>
-                var swiper = new Swiper(".mySwiperpd2", {
-                slidesPerView: 3,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                });
-            </script>
-    </main>
-    
-    <%- include('../partials/footer') %>
-
-</body>
+    </body>
 
 </html>
