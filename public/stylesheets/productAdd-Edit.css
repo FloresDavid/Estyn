@@ -1,0 +1,127 @@
+.product-admin-main label {
+    font-size: small;
+}
+.product-admin-main input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.product-admin-main select {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.product-admin-main {
+    padding: 0 5%;
+}
+.product-admin-title {
+    color: white;
+    text-align: center;
+}
+.product-admin-main-section {
+    margin: 4% 0;
+    background-color: var(--colorGrisClaro);
+}
+.product-admin-main-section-div {
+    padding: 5%;
+}
+.product-admin-container-de-form {
+    padding-top: 3%;
+}
+.product-admin-juego {
+    display: block;
+}
+.product-admin-juego input{
+    width:100%;
+}
+.product-admin-precio-plataforma-stock {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-admin-precio {
+    width: 32%;
+}
+.product-admin-precio input{
+    width: 100%;
+}
+.product-admin-plataforma {
+    width: 32%;
+}
+.product-admin-plataforma select {
+    width: 100%;
+}
+.product-admin-stock {
+    width: 32%;
+}
+.product-admin-stock input{
+    width: 100%;
+}
+.product-admin-categories {
+    display: flex;
+    justify-content: space-between;
+}
+.product-admin-category{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 30%;
+}
+.product-admin-descripcion{
+    padding: 2% 0;
+}
+.product-admin-descripcion textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-top: 1%;
+}
+.product-admin-img-pri-stock {
+    display: flex;
+}
+.product-admin-img-pri input {
+    width: -webkit-fill-available;
+    height: max-content;
+    margin-bottom: 5%;
+}
+@media (min-width: 768px) {
+    .product-admin-main label {
+        font-size: medium;
+    }
+    .product-admin-main-section-div h6 {
+        font-size: 13px;
+    }
+    .product-admin-container-de-form input{
+        height: 35px;
+    }
+    .product-admin-container-de-form select{
+        height: 35px;
+    }
+    .product-admin-img-pri input {
+        height: max-content;
+    }
+    .product-admin-container-de-form form *{
+        font-size: large;
+    }
+}
+@media (min-width: 1024px) {
+    .product-admin-main-section-div h6 {
+        font-size: 16px;
+    }
+    .product-admin-container-de-form input{
+        height: 60px;
+    }
+    .product-admin-container-de-form select{
+        height: 60px;
+    }
+    .product-admin-img-pri input {
+        height: max-content;
+    }
+    .product-admin-container-de-form form *{
+        font-size: x-large;
+    }
+}

@@ -7,31 +7,31 @@
 }) %>
 
 
-<body class="product-edit-body">
+<body class="product-admin-body">
 	<%- include('../partials/header-admin') %>
-	<main class="product-edit-main">
-        <h1 class="product-edit-title">Editar</h1>
-        <section class="product-edit-main-section">
-            <div class="product-edit-main-section-div">
+	<main class="product-admin-main">
+        <h1 class="product-admin-title">Editar</h1>
+        <section class="product-admin-main-section">
+            <div class="product-admin-main-section-div">
                 <div>
                     <h6><a href="/dashboard"> Admin </a>> Editando <%= nombre%></h6>
                     <hr>
                 </div>  
-                <div class="product-edit-container-de-form">
+                <div class="product-admin-container-de-form">
                     <form action="">
                         <h4>Editando <%= nombre %></h4>
                         <hr>
                         <br>
-                        <div class="product-edit-juego">
+                        <div class="product-admin-juego">
                             <label for="name">Juego</label>
                             <input name="name" type="text" id="name" value="<%=nombre%>">
                         </div>
-                        <div class="product-edit-precio-plataforma-stock">
-                            <div class="product-edit-precio">
+                        <div class="product-admin-precio-plataforma-stock">
+                            <div class="product-admin-precio">
                                 <label for="price">Precio</label>
                                 <input name="price" type="text" id="price" value="<%=Intl.NumberFormat('de-DE').format(precio)%>">
                             </div>
-                            <div class="product-edit-plataforma">
+                            <div class="product-admin-plataforma">
                                 <label for="plataform">Plataforma</label>
                                 <select name="plataform" id="plataform" aria-label="Floating label select example">
                                     <option <%= plataforma === "PS3" && "selected" %> value="PS3">PS3</option>
@@ -42,18 +42,18 @@
                                     <option <%= plataforma === "Nintendo_Switch" && "selected" %> value="Nintendo_Switch">Nintendo Switch</option>
                                 </select>
                             </div>
-                            <div class="product-edit-stock">
+                            <div class="product-admin-stock">
                                 <label for="stock">Stock Actual</label>
                                 <input name="stock" type="number" id="stock" value="<%=stock%>">
                             </div>
                         </div>
                         <div>
-                            <div class="product-edit-descripcion">
+                            <div class="product-admin-descripcion">
                                 <label for="description">Descripción</label><br>
                                 <textarea name="description" id="description" class="textarea-description" ><%=descripcion%></textarea>
                                 </div>
                         </div>
-                        <div class="product-edit-img-pri">
+                        <div class="product-admin-img-pri">
                             <label for="imagenPrincipal">Imagen principal</label>
                             <input class="img-pri-input" name="imagenPrincipal" type="file" id="imagenPrincipal">
                         </div>

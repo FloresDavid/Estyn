@@ -1,78 +1,132 @@
 
-
 <!DOCTYPE html>
 <html lang="ES">
 
 <%- include('../partials/head',{
-	title : 'Nuevo'
+	title : 'Nuevo Juego'
 }) %>
 
 
-<body>
+<body class="product-admin-body">
 	<%- include('../partials/header-admin') %>
-    <main class="container">
-        <section class="row my-5">
-            <div class="col-12 col-md-10 mx-auto">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/dashboard" class="text-primary">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Nuevo Restaurant</li>
-                            </ol>
-                          </nav>
-                        <a class="btn btn-dark" href="/productos/agregar">Nuevo</a>
-                    </div>  
-                    <div class="card-body">
-                        <form action="" class="row">
-                            <h3>Nuevo Restaurante</h3>
-                            <hr>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <input name="name" type="text" class="form-control" id="name">
-                                    <label for="name">Restaurant</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input name="address" type="text" class="form-control" id="adress">
-                                    <label for="adress">Direccion</label>
-                                </div>
-                                <div class="col-12 col-md-3 mb-3 d-flex align-item-center text-align-center">
-                                    <input name="mainimage" type="file" class="form-control" id="main-image" hidden>
-                                    <label class="btn-lg btn-outline-dark w-100" for="main-image">Imagen principal</label>
-                                </div>
-                                <div class="col-12 col-md-3 mb-3 d-flex align-item-center text-align-center">
-                                    <input name="images" type="file" class="form-control" id="images" hidden multiple>
-                                    <label class="btn-lg btn-outline-dark w-100" for="images">Imagenes</label>
-                                </div>
+	<main class="product-admin-main">
+        <h1 class="product-admin-title">Nuevo Juego</h1>
+        <section class="product-admin-main-section">
+            <div class="product-admin-main-section-div">
+                <div>
+                    <h6><a href="/dashboard"> Admin </a>> Nuevo juego</h6>
+                    <hr>
+                </div>  
+                <div class="product-admin-container-de-form">
+                    <form action="">
+                        <h4>Nuevo juego</h4>
+                        <hr>
+                        <br>
+                        <div class="product-admin-juego">
+                            <label for="name">Juego</label>
+                            <input name="name" type="text" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="product-admin-precio-plataforma-stock">
+                            <div class="product-admin-precio">
+                                <label for="price">Precio</label>
+                                <input name="price" type="text" id="price" placeholder="Precio">
                             </div>
-                            <div class="col-12 mb-3">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="descripcion" id="description" style="height: 150px;"></textarea>
-                                    <label for="description">descripcion</label>
-                                  </div>
+                            <div class="product-admin-plataforma">
+                                <label for="plataform">Plataforma</label>
+                                <select name="plataform" id="plataform" aria-label="Floating label select example">
+                                    <option selected hidden>Seleccione Plataforma...</option>
+                                    <option>PS3</option>
+                                    <option>PS4</option>
+                                    <option>PS5</option>
+                                    <option>XBOX ONE</option>
+                                    <option>XBOX 360</option>
+                                    <option>Nintendo Switch</option>
+                                </select>
                             </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <select name="category" class="form-select" id="category" aria-label="Floating label select example">
-                                      <option value="" selected hidden>Seleccionar</option>
-                                      <option value="barato">Barato</option>
-                                      <option value="romantico">Romantico</option>
-                                      <option value="sofisticado">Sofisticado</option>
-                                    </select>
-                                    <label for="category">Categoria</label>
-                                  </div>
+                            <div class="product-admin-stock">
+                                <label for="stock">Stock Actual</label>
+                                <input name="stock" type="number" id="stock" placeholder="Stock">
                             </div>
-                            <div>
-                                <div class="col-12 d-flex justify-content-end">
-                                    <button class="btn-lg btn-dark w-100">Guardar</button>
+                        </div>
+
+                        
+                        <label for="category">Seleccione las categorias</label>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="accion">
+                                <label for="category">Acción</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="aventura">
+                                <label for="category">Aventura</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="carreras">
+                                <label for="category">Carreras</label>
+                            </div>
+                        </div>
+
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="deportes">
+                                <label for="category">Deportes</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="casual">
+                                <label for="category">Casual</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="estrategia">
+                                <label for="category">Estrategia</label>
+                            </div>
+                        </div>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="multijugador">
+                                <label for="category">Multijugador</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="rol">
+                                <label for="category">Rol</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="simulacion">
+                                <label for="category">Simulación</label>
+                            </div>
+                        </div>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="plataformas">
+                                <label for="category">Plataformas</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="realidad-virtual">
+                                <label for="category">Realidad Virtual</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" value="disparos">
+                                <label for="category">Disparos</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="product-admin-descripcion">
+                                <label for="description">Descripción</label><br>
+                                <textarea name="description" id="description" class="textarea-description"></textarea>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="product-admin-img-pri">
+                            <label for="imagenPrincipal">Imagen principal</label>
+                            <input class="img-pri-input" name="imagenPrincipal" type="file" id="imagenPrincipal">
+                        </div>
+                        <div>
+                            <button class="btn primary">Guardar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
+    
 
 
 
