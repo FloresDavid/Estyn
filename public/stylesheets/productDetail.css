@@ -37,6 +37,10 @@
     width: 90%;
 }
 
+.main__product {
+    width: 100%;
+}
+
 .product-info {
     padding-left: 50px;
 }
@@ -55,6 +59,18 @@
     color: #fff;
     display: flex;
     justify-content: space-between;
+}
+
+.medio__pago {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.medio__pago button {
+    color:#fff;
+    padding: 5px;
+    background-color: var(--colorAzulClaro);
 }
 
 .precio button {
@@ -79,6 +95,8 @@
 }
 
 .add__carrito button {
+    
+    color: #fff;
     background-color: var(--colorAzulClaro);
     padding: 5px;
 }
@@ -105,6 +123,15 @@
 .reseñas__coment {
     background-color: var(--colorGrisClaro);
     padding: 5px;
+}
+
+.reseñas__coment p  {
+    border-bottom: 1px solid var(--colorGrisOscuro);
+}
+
+.p_relacionados {
+    
+    margin: 20px;
 }
 
 .comentarios__stars {
@@ -140,20 +167,25 @@
     font-weight: bold;
     text-align: center;
     color: red;
+    padding: 7px;
 }
 
-@media (min-width:426px) {
+@media (min-width:764px) {
     .main__product {
         display: flex;
     }
 
     .main_image {
         width: 100%;
-        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    .main__product {
+        width: 100%;
     }
 
     .add_cart {
-        height: 160px;
+        height: 200px;
         margin-top: 100px;
     }
 
@@ -173,7 +205,7 @@
         width: 500px;
     }
     .add_cart {
-        margin-top: 250px;
+        
         width: 310px;
         height: 200px;
         margin-left: 35px;
@@ -181,7 +213,7 @@
 
     .add__carrito button {
         width: 100%;
-        margin-left: 370px;
+    
     }
     .price_games {
         font-size: 50px;
