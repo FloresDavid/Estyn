@@ -47,6 +47,67 @@
                                 <input name="stock" type="number" id="stock" value="<%=stock%>">
                             </div>
                         </div>
+                        <label for="category">Seleccione las categorias</label>
+                        <div class="product-admin-category">
+                            <input name="category" hidden type="checkbox" id="category" value="accion">
+                        </div>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("accion") && "checked" %> value="accion">
+                                <label for="category">Acción</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("aventura") && "checked" %> value="aventura">
+                                <label for="category">Aventura</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("carreras") && "checked" %> value="carreras">
+                                <label for="category">Carreras</label>
+                            </div>
+                        </div>
+
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("deportes") && "checked" %> value="deportes">
+                                <label for="category">Deportes</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("casual") && "checked" %> value="casual">
+                                <label for="category">Casual</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("estrategia") && "checked" %> value="estrategia">
+                                <label for="category">Estrategia</label>
+                            </div>
+                        </div>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("multijugador") && "checked" %> value="multijugador">
+                                <label for="category">Multijugador</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("rol") && "checked" %> value="rol">
+                                <label for="category">Rol</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("simulacion") && "checked" %> value="simulacion">
+                                <label for="category">Simulación</label>
+                            </div>
+                        </div>
+                        <div class="product-admin-categories">
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("plataformas") && "checked" %> value="plataformas">
+                                <label for="category">Plataformas</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("realidad virtual") && "checked" %> value="realidad virtual">
+                                <label for="category">Realidad Virtual</label>
+                            </div>
+                            <div class="product-admin-category">
+                                <input name="category" type="checkbox" id="category" <%= categorias.includes("disparos") && "checked" %> value="disparos">
+                                <label for="category">Disparos</label>
+                            </div>
+                        </div>
                         <div>
                             <div class="product-admin-descripcion">
                                 <label for="description">Descripción</label><br>

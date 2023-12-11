@@ -68,7 +68,7 @@
 .product-admin-category{
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 5px;
     width: 30%;
 }
 .product-admin-descripcion{
@@ -107,6 +107,9 @@
     .product-admin-container-de-form form *{
         font-size: large;
     }
+    .product-admin-category label{
+        font-size: larger;
+    }
 }
 @media (min-width: 1024px) {
     .product-admin-main-section-div h6 {
@@ -123,5 +126,11 @@
     }
     .product-admin-container-de-form form *{
         font-size: x-large;
+    }
+    .product-admin-category{
+        gap: 10px;
+    }
+    .product-admin-category label{
+        font-size: xx-large;
     }
 }
