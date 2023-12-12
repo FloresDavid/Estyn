@@ -1,17 +1,18 @@
 
 
-<section class="index__main__section-img-sueltas"></section>
-<% catalogo.forEach(e => { %>
-    <h2><%= e.toUpperCase() %></h2>
-<% categorias(e).forEach(t => { %>
-       
-    
-        <article>
-            <a href="/productos/detalle"><img src="/images/<%= t.imagenPrincipal %>" alt=""></a>
-        </article>
-
- 
-    
-    <% }) %>
-    <% }) %>
-</section> 
+<section class="index__main__section-img-sueltas">
+    <% catalogo.forEach(e => { %>
+        <h2><%= e.toUpperCase() %></h2>
+    <% categorias(e).forEach(t => { %>
+           
+        
+            <article>
+                <a href="/productos/detalle"><img src="/images/<%= t.imagenPrincipal %>" alt="">
+                <div> <p>descripcion</p> <p> 50</p> </div></a>
+            </article>
+            
+     
+        
+        <% }) %>
+        <% }) %>
+    </section> 

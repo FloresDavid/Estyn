@@ -16,16 +16,16 @@
 .index__main__div-categorias-generos {
     display: flex;
     padding: 0 5%;
-    justify-content: space-between;
     justify-content: space-around;
 }
 .index__main__div-categorias-generos div{
     font-size: small;
+    display: flex;
+    flex-direction: column;
 }
 .index__main__div__div-generos div{
     display: flex;
-    justify-content: space-between;
-    
+ 
 }
 .index__main__div__div-generos div ul {
     margin-left: 10px;
@@ -33,16 +33,30 @@
    color: blue;
 }
 
+.index__main__section-img-sueltas {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+   align-items: start;
+}
+.index__main__section-img-sueltas article{
+    width: 100%;
+    
+}
+.index__main__section-img-sueltas h2{
+    width: 100%;
+}
 .index__main__section-img-sueltas article img {
     width: -webkit-fill-available;
     padding: 5% 20px;
 }
-.index__main__section-img-sueltas article img:hover{
-    padding: 10px;
+.index__main__section-img-sueltas div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
-.index__main__section-img-sueltas {
-    margin-bottom: 5%;
-}
+
 
 /*AGREGADO POR EMILIANO*/
 .index__main__section-banner2-imgs h2{
@@ -53,32 +67,20 @@
         display: flex;
     }
     .index__main__section-img-sueltas article {
-        width: 50%;
+        width: 30%;
+        
+    }
+    .index__main__section-img-sueltas article:hover{
+      padding: 5px;
     }
     .index__main__div-categorias-generos div{
         font-size: large;
     }
 }
 
-@media (min-width: 1024px) {
-    .index__main__section-explorar-banner2-imgs {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 5%;
+@media (min-width:1024px){
+    .index__main__section-img-sueltas article {
+        width: 20%;
+        
     }
-    .index__main__div-categorias-generos{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        padding-left: 5%;
-        width: 30%;
-        font-size: 30px;
     }
-    .index__main__div__div-generos div{
-        display: flex;
-        flex-direction: column;
-    }
-    .index__main__section-banner2-imgs {
-        width: 70%;
-    }
-}
