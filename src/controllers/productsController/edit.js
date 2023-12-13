@@ -1,4 +1,4 @@
-const { leerJSON } = require("../../data");
+const { JSON } = require("../../data");
 
 module.exports = (req,res) => {
     

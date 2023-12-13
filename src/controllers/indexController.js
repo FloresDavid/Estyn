@@ -39,7 +39,7 @@ module.exports = {
         return res.render('productcart',{products,totalis})}
     },
     admin : (req,res) => {
-        return res.render('dashboard', {...products})
+        return res.render('dashboard', {products})
 
     },
 }

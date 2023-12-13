@@ -10,9 +10,7 @@
     <form action="">
         <main>            
             <section class="section-dashboard">
-                
                 <div class="container">
-                
                     <table class="table-admin">
                             <a href="" class="boton-dashboard"><h3 class="btn secondary">Nuevo</h3></a>
                     <thead>
@@ -26,50 +24,21 @@
                         </tr>
                     </thead>
                     <tbody class="tbody-dashboard">
+                        <% products.forEach(prod => {%>
                         <tr>
-                            <td>01</td>
-                            <td>Assassin's Creed Valhalla</td>
-                            <td>Aventura</td>
-                            <td>PS4 PS5 PC </td>
-                            <td>5</td>
-                            <td>61500.99$</td>
+                            <td><%= prod.id %></td>
+                            <td><%= prod.nombre %></td>
+                            <td><%= prod.categoria %></td>
+                            <td><%= prod.plataforma %></td>
+                            <td><%= prod.stock %></td>
+                            <td><%= prod.precio %></td>
+                            <td><a href=""><i class="fa-solid fa-eye"></i></a></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td><a href="/productos/editar/1"><i class="fa-solid fa-pen"></i></a></td>
                         </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Rodrigo</td>
-                            <td>Gaston Jigena</td>
-                            <td>23</td>
-                            <td>0800DONROUCH</td>
-                            <td>10pe</td>
-
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Rodrigo</td>
-                            <td>Gaston Jigena</td>
-                            <td>23</td>
-                            <td>0800DONROUCH</td>
-                            <td>10pe</td>
-
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Rodrigo</td>
-                            <td>Gaston Jigena</td>
-                            <td>23</td>
-                            <td>0800DONROUCH</td>
-                            <td>10pe</td>
-
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Rodrigo</td>
-                            <td>Gaston Jigena</td>
-                            <td>23</td>
-                            <td>0800DONROUCH</td>
-                            <td>10pe</td>
-
-                        </tr>
+                        
+                            <% })  %>
+                       
                     </tbody>
                 </table>
                 </div>
