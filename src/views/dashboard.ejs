@@ -12,8 +12,8 @@
             <section class="section-dashboard">
                 <div class="container">
                     <table class="table-admin">
-                            <a href="" class="boton-dashboard"><h3 class="btn secondary">Nuevo</h3></a>
-                    <thead>
+                    <a href="/productos/agregar" class="boton-dashboard"><h3 class="btn secondary">Nuevo</h3></a>
+                    <thead class="a">
                         <tr>
                             <th class="id-admin"> iD </th>
                             <th class="nombre-admin">Nombre</th>
@@ -23,6 +23,7 @@
                             <th class="precio-admin">Precio</th>
                         </tr>
                     </thead>
+                    
                     <tbody class="tbody-dashboard">
                         <% products.forEach(prod => {%>
                         <tr>

@@ -14,9 +14,6 @@ module.exports = {
         return res.render('index',{products,categorias,catalogo})
 
     },
-
-
-
     productcart : (req,res) => {
 
    
