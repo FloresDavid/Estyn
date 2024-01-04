@@ -15,7 +15,7 @@
                     <a href="/productos/agregar" class="boton-dashboard"><h3 class="btn secondary">Nuevo</h3></a>
                     <thead class="a">
                         <tr>
-                            <th class="id-admin"> iD </th>
+                            
                             <th class="nombre-admin">Nombre</th>
                             <th class="categoria-admin">Categoria</th>
                             <th class="plataforma-admin">Plataforma</th>
@@ -27,18 +27,16 @@
                     <tbody class="tbody-dashboard">
                         <% products.forEach(prod => {%>
                         <tr>
-                            <td><%= prod.id %></td>
+                            
                             <td><%= prod.nombre %></td>
                             <td><%= prod.categoria %></td>
                             <td><%= prod.plataforma %></td>
                             <td><%= prod.stock %></td>
                             <td><%= prod.precio %></td>
-                            <td><a href=""><i class="fa-solid fa-eye"></i></a></td>
-                            <form action="/productos/eliminar/<%= prod.id %>?_method=delete" method="POST" enctype="multipart/form-data">
-                                <td><button><i class="fa-solid fa-trash"></i></button></td>
-                            </form>
-                            
-
+                            <form action="/productos/eliminar/<%= prod.id %>?_method=delete" method="POST">
+                            <td><button type="submit"><i class="fa-solid fa-trash"></i></button></td>
+                        </form>
+                           
                             <td><a href="/productos/editar/<%= prod.id %>"><i class="fa-solid fa-pen"></i></a></td>
                         </tr>
                         

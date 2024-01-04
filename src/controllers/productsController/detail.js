@@ -10,7 +10,7 @@ module.exports = (req,res) => {
         const products = JSON('products');
         const comentarios = JSON('comentarios');
 
-        const product = products.find(product => product.id === +id)
+        const product = products.find(product => product.id == id)
 
         return res.render('products/productDetail', {
             ...product, comentarios
