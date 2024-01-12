@@ -9,7 +9,7 @@ module.exports = (req,res) => {
 
     const nuevoProducto = new funcionParaCrearProductos(name,plataform,price,stock,description,category,imagenPrincipal)
 
-    productos.push(nuevoProducto)
+    productos.unshift(nuevoProducto)
 
     mandarJSON("products",productos)
 

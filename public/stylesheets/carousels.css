@@ -10,6 +10,10 @@
     align-items: center;
    
 }
+element.style{
+  padding: 5%;
+
+}
 
 .swiper-slide a img {
   display: block;
@@ -88,4 +92,5 @@
     .swiper-slidepd2 article img {
       height: 450px;
     }
+
   }
