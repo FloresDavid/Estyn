@@ -9,16 +9,16 @@
     <main class="index__main">
         <!--Slider principal de destacados-->
         <section class="index__main__section-destacados">
-            <h1>NOVEDADES DESTACADAS</h1>
+            <h1>NUEVOS JUEGOS</h1>
             <!-- Slider main container -->
             <div class="swiper mySwiper1">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"> <a href="/productos/detalle/1"><img src="/images/banner_ark.png" alt="img-banner-ark"></a></div>
-                    <div class="swiper-slide"> <a href="/productos/detalle/2"><img src="/images/banner_fc24.jpg" alt="img-banner-fc24"></a></div>
-                    <div class="swiper-slide"> <a href="/productos/detalle/3"><img src="/images/banner_stalker2.jpg" alt="img-banner-stalker2"></a></div>
-                    <div class="swiper-slide"> <a href="/productos/detalle/4"><img src="/images/banner_codmw2.jpg" alt="img-banner-codmw2"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle/<%=products[0].id  %>"><img src="/images/<%=products[0].imagenPrincipal  %>" alt="img-banner-ark"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle/<%=products[1].id  %>"><img src="/images/<%=products[1].imagenPrincipal  %>" alt="img-banner-fc24"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle/<%=products[2].id  %>"><img src="/images/<%=products[2].imagenPrincipal  %>" alt="img-banner-stalker2"></a></div>
+                    <div class="swiper-slide"> <a href="/productos/detalle/<%=products[3].id  %>"><img src="/images/<%=products[3].imagenPrincipal  %>" alt="img-banner-codmw2"></a></div>
                 </div>
                 <BR><BR>
                 <!-- If we need pagination -->

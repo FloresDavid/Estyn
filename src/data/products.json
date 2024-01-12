@@ -1,8 +1,18 @@
 [
    {
+      "id": "5807ea73-0807-4c75-81a9-72252ceeab9d",
+      "nombre": "EA SPORTS FC™ 24",
+      "plataforma": "PS5",
+      "precio": 70,
+      "stock": 10,
+      "descripcion": "EA SPORTS FC™ 24 te da la bienvenida a The World's Game: la experiencia futbolística más fiel hasta la fecha con HyperMotionV, PlayStyles optimizado por Opta y el motor mejorado de Frostbite™.",
+      "categorias": "deportes",
+      "imagenPrincipal": "1705063867447_products.jpg"
+   },
+   {
       "id": 1,
       "nombre": "Assassin's Creed Valhall",
-      "imagenPrincipal": "1704981482246_products.jpeg",
+      "imagenPrincipal": "1705063470306_products.jpg",
       "plataforma": "XBOX_ONE",
       "precio": 1000000,
       "stock": 0,
