@@ -15,22 +15,24 @@
         <h3 class="login__sectionform--titulo">
             Iniciar Sesion
         </h3>
-    <form action="" class="login__section__form">
+    <form action="/usuarios/ingreso" class="login__section__form" method="post">
     
     <div class="login__section__formdiv">
-    <label for="usuario"></label>
-    <input class="login__section__formdiv--escribir" type="text" name="usuario" id="usuario" placeholder="correo electronico">
-    </div>
+    
+    <input class="login__section__formdiv--escribir" type="text" name="email" id="email" placeholder="correo electronico">
+    <small><%= locals.errors && errors.email? errors.email.msg:null %></small>
+</div>
     <div class="login__section__formdiv">
-    <label for="password"></label>
-    <input class="login__section__formdiv--escribir"  type="password" name="password" id="password" placeholder="contraseña">
+    
+    <input class="login__section__formdiv--escribir"  type="password" name="contraseña" id="contraseña" placeholder="contraseña">
     <span class="login__section__form__ojito"><i class="fa-regular fa-eye"></i></span>
+    <small><%= locals.errors && errors.contraseña? errors.contraseña.msg:null %></small>
     </div>
     <div class="login__section__formboton">
     <label for="iniciar"></label>
     <input type="submit" value="INICIAR" id="iniciar">
     </div>
-    
+</form>
     <div class="login__section__formP">
         <p><a href="/usuarios/registro">Crear cuenta</a></p>    
     </div> 
@@ -39,7 +41,7 @@
     </div>
     
     
-</form>
+
 
     </section>
     </main>
