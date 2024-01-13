@@ -4,10 +4,12 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const session = require("express-session")
 
 const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productRouter = require('./routes/product.routes');
+const sessionLocals = require("./middlewares/sessionLocals");
 
 const app = express();
 
@@ -19,6 +21,8 @@ app
   .use(logger('dev'))
   .use(cookieParser())
   .use(methodoverride("_method"))
+
+
     
   /* formularios */
   .use(express.json())
@@ -26,6 +30,14 @@ app
   
   /* recursos estaticos */
   .use(express.static(path.join(__dirname,"..", 'public')))
+
+  .use(session({
+    secret : 'VAMO ESTYN LOCO',
+    resave:true,
+    saveUninitialized:true//PARA QUE NO LO MANIPULEN
+  }))
+ 
+  .use(sessionLocals)
 
   /* rutas */
   .use('/', indexRouter)

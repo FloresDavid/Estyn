@@ -1,5 +1,6 @@
 const { validationResult } = require("express-validator")
-
+const { JSON } = require("../data")
+const usuarios = JSON("usuarios")
 module.exports = {
     login : (req,res) => {
         return res.render('users/login')
@@ -9,10 +10,25 @@ module.exports = {
     },
     ProssesLogin: (req,res)=>{
         const errors = validationResult(req)
-        console.log(errors.mapped())
+        
         if(errors.isEmpty()){
-            return res.send("tas logueado")
+
+            const {email}= req.body
+
+            const {id, nombre} = usuarios.find(user => user.email === email)
+
+            req.session.userLogin = {id, nombre}
+
+
+            return res.redirect("/")
         }
-        return res.render("users/login",{errors:errors.mapped()})
+        return res.render("users/login",{errors:errors.mapped(),old:req.body})
+    },
+    logout:(req,res)=>{
+           
+        req.session.destroy();
+
+        return res.redirect("/")
     }
+    
 }

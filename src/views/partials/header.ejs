@@ -5,8 +5,10 @@
                 <li><a href="/dashboard"><i class="fa-solid fa-house"></i><br>Dashboard</a></li>  
                 <li><a href="#"><i class="fa-solid fa-bars"></i><br>Productos</a></li>
                 <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i><br>Carrito</a></li>
+
                 <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i><br>Iniciar Sesion</a></li>
                 <li><a href="/usuarios/registro"><i class="fa-solid fa-pen-to-square"></i><br>Registrarse</a></li> 
+               
             </div>
         </ul>
     </div>
@@ -26,9 +28,15 @@
                     <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
                     <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i></a></li>
+                    <% if (locals.userLogin) { %>
+                     <li class="white-text"><a href=""></a>MI PERFIL(<%= locals.userLogin.nombre  %>)</li>
+                     <li class="white-text">|</li>
+                     <li class="white-text"><a href="/usuarios/salir">salir</a></li>
+                    <% } else{%>
                     <li class="white-text"><a href="/usuarios/ingreso">Iniciar Sesion</a></li> 
                     <li class="white-text">|</li>
                     <li class="white-text"><a href="/usuarios/registro">Registrarse</a></li> 
+                    <% } %>
                 </div>
             </ul>
         </div>
