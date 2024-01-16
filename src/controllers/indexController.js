@@ -47,7 +47,7 @@ console.log(req.session.userLogin)
         const buscado = products.filter(productos =>{
             return productos.nombre.toLowerCase().includes(buscadorAdmin.toLowerCase())
         })
-        console.log(buscado)
+        console.log(buscadorAdmin)
         
         res.render("dashboard",{buscado,buscadorAdmin,products})
             }

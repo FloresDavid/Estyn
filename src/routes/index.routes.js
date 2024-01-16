@@ -9,7 +9,7 @@ router
   .get('/carrito',productcart)
   .post('/carrito',productcart)
   .get('/dashboard', admin) 
-  .get("/admin/productos/buscar",searchAdmin)
+  .get("/dashboard",searchAdmin)
 
 
 module.exports = router
