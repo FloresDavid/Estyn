@@ -42,14 +42,15 @@ console.log(req.session.userLogin)
         return res.render('dashboard', {products})
     },
     searchAdmin: (req,res)=>{
+       
         const {buscadorAdmin}=req.query
         
         const buscado = products.filter(productos =>{
             return productos.nombre.toLowerCase().includes(buscadorAdmin.toLowerCase())
         })
-        console.log(buscadorAdmin)
         
-        res.render("dashboard",{buscado,buscadorAdmin,products})
+        
+        return res.render("dashboard",{buscado,buscadorAdmin,products})
             }
             
 }
