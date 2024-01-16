@@ -3,6 +3,7 @@ const products = JSON('products')
 const cupones = JSON('cupones')
 const catalogo = ["aventura","accion"]
 
+
 const categorias = function(parametro){ 
     
     return pepe = products.filter(a=> a.categorias == parametro)
@@ -40,6 +41,17 @@ console.log(req.session.userLogin)
         
         return res.render('dashboard', {products})
     },
+    searchAdmin: (req,res)=>{
+        const {buscadorAdmin}=req.query
+        
+        const buscado = products.filter(productos =>{
+            return productos.nombre.toLowerCase().includes(buscadorAdmin.toLowerCase())
+        })
+        console.log(buscado)
+        
+        res.render("dashboard",{buscado,buscadorAdmin,products})
+            }
+            
 }
 
 

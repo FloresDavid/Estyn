@@ -1,6 +1,6 @@
 [{
    "id": "5807ea73-0807-4c75-81a9-72252ceeab9d",
-   "nombre": "EA SPORTS FC™ 24",
+   "nombre": "EA SPORTS FC 24",
    "plataforma": "PS5",
    "precio": 70,
    "stock": 10,
@@ -10,7 +10,7 @@
 },
    {
       "id": 1,
-      "nombre": "Assassin's Creed Valhall",
+      "nombre": "Assassins Creed Valhall",
       "imagenPrincipal": "1704981482246_products.jpeg",
       "plataforma": "XBOX_ONE",
       "precio": 1000000,
@@ -25,7 +25,7 @@
    },
    {
       "id": 2,
-      "nombre": "Grand Theft Auto V - Premium Edition",
+      "nombre": "Grand Theft Auto V  Premium Edition",
       "imagenPrincipal": "grand-theft-auto-v-premium-edition-ps4.webp",
       "plataforma": "PS3",
       "precio": 200000,
@@ -39,7 +39,7 @@
    },
    {
       "id": 3,
-      "nombre": "Everybody Dance 2 - PS3",
+      "nombre": "Everybody Dance 2",
       "imagenPrincipal": "everybody-dance-2-ps3.webp",
       "plataforma": "PS3",
       "precio": 10399.99,
@@ -49,7 +49,7 @@
    },
    {
       "id": 4,
-      "nombre": "NBA 2K17 - XBOX ONE",
+      "nombre": "NBA 2K17  XBOX ONE",
       "imagenPrincipal": "nba-2k17-xbox-one.webp",
       "plataforma": "PS3",
       "precio": 1000000,
@@ -59,7 +59,7 @@
    },
    {
       "id": 5,
-      "nombre": "Super Smash Bros. - Ultimate - Nintendo Switch",
+      "nombre": "Super Smash Bros Ultimate Nintendo Switch",
       "imagenPrincipal": "super-smash-bros-ultimate-nintendo-switch.webp",
       "plataforma": "PS3",
       "precio": 10000,

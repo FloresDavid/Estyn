@@ -2,8 +2,11 @@
     <div class="header-admin">
         <ul class="lista-header-admin-dos">
             <div class="busqueda-admin contenedor-busqueda-boton-admin">
-                <input class="__input" placeholder=" Buscar" type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="/admin/productos/buscar" method="get">
+                <input class="__input" placeholder=" Buscar" type="search" name="buscadorAdmin">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                
+            </form>
             </div>
             <div class="icons-barra-admin">
                 <li><a href="/"><i class="fa-solid fa-house"></i><br>Estyn</a></li>  
