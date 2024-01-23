@@ -69,7 +69,7 @@
 .icons-barra {
     width: 100%;
     margin: 0, 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     display:flex;
 }
 .icons-barra a {

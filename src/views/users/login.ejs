@@ -19,7 +19,7 @@
     
     <div class="login__section__formdiv">
     
-    <input class="login__section__formdiv--escribir" type="text" name="email" id="email" placeholder="correo electronico">
+    <input class="login__section__formdiv--escribir" type="text" name="email" id="email" placeholder="correo electronico"  value="<%= locals.old && old.email ? old.email : null %>">
     <small><%= locals.errors && errors.email? errors.email.msg:null %></small>
 </div>
     <div class="login__section__formdiv">

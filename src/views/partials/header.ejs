@@ -2,13 +2,20 @@
     <div>
         <ul class="lista-header-dos">
             <div class="icons-barra">
-                <li><a href="/dashboard"><i class="fa-solid fa-house"></i><br>Dashboard</a></li>  
+                <% if (locals.userLogin && locals.userLogin.tipo == "admin") { %>
+                    <li><a href="/dashboard"><i class="fa-solid fa-house"></i><br>Dashboard</a></li> 
+                <% } else{%>
+                    <li><a href="/"><i class="fa-solid fa-house"></i><br>Inicio</a></li> 
+                <% } %>
                 <li><a href="#"><i class="fa-solid fa-bars"></i><br>Productos</a></li>
                 <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i><br>Carrito</a></li>
-
-                <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i><br>Iniciar Sesion</a></li>
-                <li><a href="/usuarios/registro"><i class="fa-solid fa-pen-to-square"></i><br>Registrarse</a></li> 
-               
+                <% if (locals.userLogin) { %>
+                    <li><a href="#"><i class="fa-solid fa-circle-user"></i><br><%= locals.userLogin.nombre  %></a></li>
+                    <li><a href="/usuarios/salir"><i class="fa-solid fa-right-from-bracket"></i><br>Salir</a></li>
+                <% } else{%>
+                    <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i><br>Iniciar Sesion</a></li>
+                    <li><a href="/usuarios/registro"><i class="fa-solid fa-pen-to-square"></i><br>Registrarse</a></li> 
+                <% } %>
             </div>
         </ul>
     </div>
@@ -27,12 +34,13 @@
                 <div class="icons-barra-md-lg">
                     <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
                     <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i></a></li>
                     <% if (locals.userLogin) { %>
-                     <li class="white-text"><a href=""></a>MI PERFIL(<%= locals.userLogin.nombre  %>)</li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+                     <li class="white-text"><a href=""></a>MI PERFIL (<%= locals.userLogin.nombre  %>)</li>
                      <li class="white-text">|</li>
-                     <li class="white-text"><a href="/usuarios/salir">salir</a></li>
+                     <li class="white-text"><a href="/usuarios/salir">Salir</a></li>
                     <% } else{%>
+                        <li><a href="/usuarios/ingreso"><i class="fa-solid fa-circle-user"></i></a></li>
                     <li class="white-text"><a href="/usuarios/ingreso">Iniciar Sesion</a></li> 
                     <li class="white-text">|</li>
                     <li class="white-text"><a href="/usuarios/registro">Registrarse</a></li> 
@@ -49,6 +57,11 @@
         </div>
         <div class="div-padre-lista">
         <ul class="lista-header">
+            <% if (locals.userLogin && locals.userLogin.tipo == "admin") { %>
+                <li><a href="/dashboard">DASHBOARD</a></li>
+            <% } else{%>
+                <li><a href="/">INICIO</a></li>
+            <% } %>
             <li><a href="#">PS3</a></li>
             <li><a href="#">PS4</a></li>
             <li><a href="#">PS5</a></li>
@@ -56,7 +69,6 @@
             <li><a href="#">NINTENDO</a></li>
             <li><a href="#">PC</a></li>
             <li><a href="#">CONTACTO</a></li>
-            <li><a href="/dashboard">DASHBOARD</a></li>
         </ul>
         <div class="contenedor-busqueda-boton">
             <input class="__input" placeholder=" Buscar" type="text">    

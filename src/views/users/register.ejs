@@ -10,45 +10,41 @@
             <div class="borde-de-caja">
 
 
-                <form class="formulario" action="">
+                <form class="formulario" action="/usuarios/registro" method="POST">
 
                     <h4 class=" h4">Crea tu cuenta</h4>
 
                     <div class="inputs">
 
-
                         <label class="label" for="Nombre">Nombre</label>
-                        <input class="input" required placeholder="Ingresa tu nombre..." name="nombre" id="Nombre"
-                            type="text">
-
-
+                        <input class="input <%= locals.errors && errors.nombre ? "is_invalid" : null %>" placeholder="Ingresa tu nombre..." name="nombre" id="Nombre" type="text" value="<%= locals.old && old.nombre ? old.nombre : null %>">
+                        <small class="input_error"><b><%= locals.errors && errors.nombre ? errors.nombre.msg : null %></b></small>
 
                         <label class="label" for="Apellido">Apellido</label>
-                        <input class="input" required placeholder="Ingresa tu Apellido..." name="apellido" id="Apellido"
-                            type="text">
-
-
+                        <input class="input <%= locals.errors && errors.apellido ? "is_invalid" : null %>" placeholder="Ingresa tu Apellido..." name="apellido" id="Apellido" type="text" value="<%= locals.old && old.apellido ? old.apellido : null %>">
+                        <small class="input_error"><b><%= locals.errors && errors.apellido ? errors.apellido.msg : null %></b></small>
 
                         <label class="label" for="email">Escribí tu email</label>
-                        <input class="input" required placeholder="Ingresar Email" id="email" type="email">
-
+                        <input class="input <%= locals.errors && errors.email ? "is_invalid" : null %>" placeholder="Ingresar Email" id="email" name="email" type="text" value="<%= locals.old && old.email ? old.email : null %>">
+                        <small class="input_error"><b><%= locals.errors && errors.email ? errors.email.msg : null %></b></small>
 
                         <label class="label" for="password">Escribí tu contraseña<a href=""></a></label>
-                        <input class="input" id="password" type="password" placeholder="Escribí tu contrasenia"
-                            form="password2">
+                        <input class="input <%= locals.errors && errors.password ? "is_invalid" : null %>" id="password" type="password" placeholder="Escribí tu contraseña" name="password">
+                        <small class="input_error"><b><%= locals.errors && errors.password ? errors.password.msg : null %></b></small>
 
 
                         <label class="label" for="password2">Confirma tu contraseña<a href=""></a></label>
-                        <input class="input" id="password2" type="password" placeholder="Escribí tu contrasenia"
-                            form="password2">
+                        <input class="input <%= locals.errors && errors.password2 ? "is_invalid" : null %>" id="password2" type="password" placeholder="Escribí tu contraseña" name="password2">
+                        <small class="input_error"><b><%= locals.errors && errors.password2 ? errors.password2.msg : null %></b></small>
 
 
                     </div>
 
                     <div class="contenedor-de-boton">
                         <div class="recaptcha">
-                            <input type="checkbox">
+                            <input type="checkbox" name="captcha">
                             <label class="label-robot" for="">No soy un robot</label>
+                            <small class="input_error"><b><%= locals.errors && errors.captcha ? errors.captcha.msg : null %></b></small>
                         </div>
                         <button class="boton">Registrarme</button>
                         <a href="/usuarios/ingreso">
